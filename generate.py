@@ -628,6 +628,7 @@ SHOTS = {
         ("review", "Review a group of similar photos side by side: keep the best, mark the rest."),
         ("compare", "Compare up to 6 photos at once in full screen."),
         ("trips", "Your library grouped by trip, with the space each one takes."),
+        ("android", "Connect an Android phone with its USB cable: nothing to install on the phone."),
     ],
 ),
 "fr": dict(
@@ -637,6 +638,7 @@ SHOTS = {
         ("review", "Passez en revue un groupe de photos similaires côte à côte : gardez la meilleure, marquez les autres."),
         ("compare", "Comparez jusqu'à 6 photos à la fois en plein écran."),
         ("trips", "Votre photothèque regroupée par séjour, avec la place que chacun occupe."),
+        ("android", "Branchez un téléphone Android avec son câble USB : rien à installer sur le téléphone."),
     ],
 ),
 "it": dict(
@@ -646,6 +648,7 @@ SHOTS = {
         ("review", "Rivedi un gruppo di foto simili affiancate: tieni la migliore, segna le altre."),
         ("compare", "Confronta fino a 6 foto alla volta a schermo intero."),
         ("trips", "La tua libreria raggruppata per soggiorno, con lo spazio occupato da ciascuno."),
+        ("android", "Collega un telefono Android con il suo cavo USB: niente da installare sul telefono."),
     ],
 ),
 "de": dict(
@@ -655,6 +658,7 @@ SHOTS = {
         ("review", "Eine Gruppe ähnlicher Fotos nebeneinander prüfen: das beste behalten, den Rest markieren."),
         ("compare", "Bis zu 6 Fotos gleichzeitig im Vollbild vergleichen."),
         ("trips", "Deine Mediathek nach Aufenthalten gruppiert, mit dem Platz, den jeder belegt."),
+        ("android", "Ein Android-Telefon mit seinem USB-Kabel anschließen: auf dem Telefon muss nichts installiert werden."),
     ],
 ),
 "es": dict(
@@ -664,6 +668,7 @@ SHOTS = {
         ("review", "Revisa un grupo de fotos similares una al lado de otra: conserva la mejor, marca el resto."),
         ("compare", "Compara hasta 6 fotos a la vez a pantalla completa."),
         ("trips", "Tu fototeca agrupada por estancia, con el espacio que ocupa cada una."),
+        ("android", "Conecta un teléfono Android con su cable USB: no hay que instalar nada en el teléfono."),
     ],
 ),
 }
