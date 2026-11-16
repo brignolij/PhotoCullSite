@@ -8,7 +8,7 @@ photos on your computer, and never modifies your originals. It runs 100% on your
 
 - **Mac:** [download PhotoCull for Mac](https://github.com/brignolij/PhotoCullSite/releases/latest/download/PhotoCull-Desktop.zip). Free, macOS 11+ on Apple Silicon, signed and notarized by Apple.
 - **Windows:** [get it from the Microsoft Store](https://apps.microsoft.com/detail/9n6wv393b3pl) or [download the zip](https://github.com/brignolij/PhotoCullSite/releases/latest/download/PhotoCull-Windows-x64.zip). Free, Windows 10/11 (64-bit). Reading an iPhone needs the free Apple Devices app from the Microsoft Store. The zip is not code-signed yet, so SmartScreen may warn on first launch.
-- **Phones:** an iPhone connects by USB; an Android phone connects over Wi-Fi (Mac and Windows) or by USB (Windows), with the free [TripSweep](https://tripsweep.idealy.ch/) app open on its Deletion tab.
+- **Phones:** an iPhone or an Android phone connects by USB cable, with nothing to install on the phone, and PhotoCull deletes its photos directly over the cable (permanent on the phone, with a 30-day copy kept on the computer by default). Deleting on an iPhone, and reading an Android phone at all, need macOS 27 or later on a Mac; any Windows 10/11 PC works. Deleting on an iPhone also needs iCloud Photos turned off. PhotoCull needs no other app.
 - [FAQ](https://photocull.idealy.ch/faq.html) · [Guides](https://photocull.idealy.ch/blog.html) · [Privacy policy](https://photocull.idealy.ch/privacy.html)
 
 This repository holds the PhotoCull website (published by GitHub Pages) and the

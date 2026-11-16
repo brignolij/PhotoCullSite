@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-# Deutsche Fassung der FAQ und des Blogs der PhotoCull-Website. Tokens in Antworten/Artikeln: {ts} {pc} {store} {mac} {win} (siehe link_tokens).
+# Deutsche Fassung der FAQ und des Blogs der PhotoCull-Website. Tokens in Antworten/Artikeln: {pc} {mac} {win} (siehe link_tokens).
 
 BLOG_UI = dict(
     nav="Blog", privacy="Datenschutz", more="Weiterlesen",
-    cta_store="📱 TripSweep im App Store laden",
-    cta_play="🤖 TripSweep bei Google Play laden",
     cta_mac="💻 PhotoCull für Mac laden", cta_win="🪟 PhotoCull für Windows laden",
-    cross_label={"tripsweep": "Desktop-App", "photocull": "Mobile App"},
     twin_android="Du nutzt ein Android-Telefon? Lies die Android-Anleitung:",
     twin_iphone="Du nutzt ein iPhone? Lies die iPhone-Anleitung:",
     index={
@@ -21,7 +18,7 @@ BLOG_UI = dict(
 FAQ_PHOTOCULL = dict(
     title="PhotoCull FAQ – Fotos am Mac oder PC sortieren und löschen",
     desc="Tausende Fotos am Computer sortieren, ähnliche Aufnahmen vergleichen, iPhone oder Android-Telefon vom Mac oder PC aus aufräumen: Antworten zu PhotoCull.",
-    nav_home="PhotoCull", nav_desktop="Mobile App",
+    nav_home="PhotoCull",
     h1="Fragen und Antworten",
     intro="Wie du deine Fotos am Computer schneller sortierst, dein iPhone oder Android-Telefon von einem Mac oder PC aus aufräumst und was PhotoCull mit deinen Fotos macht (und nie macht).",
     qa=[
@@ -30,29 +27,27 @@ FAQ_PHOTOCULL = dict(
         ("Warum Fotos am Computer statt auf dem iPhone sortieren?",
          "Ein großer Bildschirm zeigt mehr Fotos auf einmal, mit Maus und Tastatur wählst du Hunderte in Sekunden aus, und Aufnahmen nebeneinander zu vergleichen ist einfacher, als hin und her zu blättern. Eine Fotomediathek mit Tausenden Fotos zu sortieren, kostet am Telefon mehrere Sitzungen und am Mac oder PC deutlich weniger Zeit."),
         ("Was ist PhotoCull?",
-         "PhotoCull ist eine kostenlose Desktop-App für Mac und Windows, die deine Fotos nach Reisen gruppiert, ähnliche Aufnahmen nebeneinander vergleicht und alles, was nicht behalten werden muss, gesammelt löscht. Sie liest die Fotomediathek deines iPhones per USB oder einen beliebigen Fotoordner auf deinem Computer und arbeitet 100 % auf dem Gerät."),
+         "PhotoCull ist eine kostenlose Desktop-App für Mac und Windows, die deine Fotos nach Reisen gruppiert, ähnliche Aufnahmen nebeneinander vergleicht und alles, was nicht behalten werden muss, gesammelt löscht. Sie liest die Fotomediathek eines iPhones oder Android-Telefons per USB-Kabel oder einen beliebigen Fotoordner auf deinem Computer und arbeitet 100 % auf dem Gerät."),
         ("Wie sortiere ich Tausende Fotos schnell?",
-         "Öffne die Ansicht „Reisen“: Deine Mediathek ist nach Reisen gruppiert, mit dem Speicherplatz jeder Reise, sodass du mit der größten beginnst. Markiere innerhalb einer Reise Fotos gesammelt, vergleiche die ähnlichen nebeneinander und behalte die beste Aufnahme jeder Gruppe. Dieselben Filter wie in der iOS-App (eintägige Reisen, ausgeschlossene Orte wie Zuhause oder Arbeit, Größe) grenzen die Auswahl weiter ein."),
+         "Öffne die Ansicht „Reisen“: Deine Mediathek ist nach Reisen gruppiert, mit dem Speicherplatz jeder Reise, sodass du mit der größten beginnst. Markiere innerhalb einer Reise Fotos gesammelt, vergleiche die ähnlichen nebeneinander und behalte die beste Aufnahme jeder Gruppe. Filter (eintägige Reisen, ausgeschlossene Orte wie Zuhause oder Arbeit, Größe) grenzen die Auswahl weiter ein."),
         ("Wie gebe ich iPhone Speicher von einem Mac oder PC aus frei?",
-         "Verbinde dein iPhone per USB, öffne PhotoCull, markiere die Reisen und Fotos, die du nicht mehr brauchst, und bestätige. PhotoCull löscht sie direkt über das USB-Kabel, sofern iCloud-Fotos ausgeschaltet ist (und auf einem Mac macOS 27 oder neuer läuft). Das Löschen ist auf dem iPhone endgültig; eine Kopie bleibt standardmäßig 30 Tage auf deinem Computer. Ist iCloud-Fotos eingeschaltet oder läuft dein Mac mit macOS 26 oder älter, führt stattdessen die kostenlose <a href=\"{ts}\">TripSweep-App</a> das Löschen über „Zuletzt gelöscht“ aus; der Speicherplatz kommt zurück, sobald du dieses Album leerst."),
+         "Verbinde dein iPhone per USB, öffne PhotoCull, markiere die Reisen und Fotos, die du nicht mehr brauchst, und bestätige. PhotoCull löscht sie direkt über das USB-Kabel, unter Windows 10/11 oder auf einem Mac mit macOS 27 oder neuer, sofern iCloud-Fotos ausgeschaltet ist. Das Löschen ist auf dem iPhone sofort und endgültig; eine Kopie bleibt standardmäßig 30 Tage auf deinem Computer. Unter macOS 26 oder älter zeigt und sortiert PhotoCull die Fotos des iPhones weiterhin, aber du löschst sie in der Fotos-App des iPhones."),
         ("Kann ich Fotos direkt vom Computer aus von meinem iPhone löschen?",
-         "Ja. Bei einem iPhone löscht PhotoCull die Fotos direkt über das USB-Kabel, von einem Mac oder einem Windows-PC aus, ohne Tageslimit und ohne etwas zu kaufen; die TripSweep-App ist nicht nötig. Drei Bedingungen: iCloud-Fotos ist auf dem iPhone ausgeschaltet (ist es eingeschaltet, erlaubt Apple dieses Löschen nicht), ein Mac läuft mit macOS 27 oder neuer (Windows funktioniert auch), und du nimmst in Kauf, dass das Löschen auf dem iPhone endgültig ist: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder, sodass sich ein Fehler durch erneutes Importieren der Datei rückgängig machen lässt. Live Photos und bearbeitete Fotos werden korrekt behandelt (alle Versionen werden zusammen gelöscht), und PhotoCull zeigt bei einem bearbeiteten Foto die bearbeitete Version. Ist eine Bedingung nicht erfüllt, nutze die <a href=\"{ts}\">TripSweep-App</a> auf dem iPhone: Sie führt das Löschen über „Zuletzt gelöscht“ (30 Tage) aus, mit einem Tageslimit (6 Fotos pro Tag kostenlos, 15 mit Pro)."),
+         "Ja. Bei einem iPhone löscht PhotoCull die Fotos direkt über das USB-Kabel, von einem Mac oder einem Windows-PC aus, ohne Tageslimit und ohne etwas zu kaufen. Drei Bedingungen: iCloud-Fotos ist auf dem iPhone ausgeschaltet (ist es eingeschaltet, erlaubt Apple dieses Löschen nicht), ein Mac läuft mit macOS 27 oder neuer (jeder Windows-10/11-PC funktioniert), und du nimmst in Kauf, dass das Löschen auf dem iPhone sofort und endgültig ist: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder (ein Kontrollkästchen beim Bestätigen), sodass sich ein Fehler durch erneutes Importieren der Datei rückgängig machen lässt. Live Photos und bearbeitete Fotos werden korrekt behandelt (alle Versionen werden zusammen gelöscht), und PhotoCull zeigt bei einem bearbeiteten Foto die bearbeitete Version. Ist iCloud-Fotos eingeschaltet, schalte es aus (Einstellungen > [dein Name] > iCloud > Fotos) oder lösche in der Fotos-App des iPhones. Unter macOS 26 oder älter kann PhotoCull die Fotos des iPhones anzeigen und sortieren, aber nicht löschen: Ein Banner in der App weist darauf hin, und du löschst in der Fotos-App des iPhones."),
         ("Ist das Löschen mit PhotoCull endgültig?",
-         "Das hängt vom Weg ab. Bei einem iPhone ist das direkte Löschen über USB auf dem iPhone endgültig: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder, damit du es erneut importieren kannst. Über TripSweep, auf einem iPhone oder einem Android-Telefon, kommen die Fotos 30 Tage lang in den Papierkorb des Telefons und lassen sich wiederherstellen. In einem Ordner auf deinem Computer landen die Dateien im Papierkorb."),
+         "Auf einem Telefon ja. Bei einem iPhone oder einem Android-Telefon ist das Löschen über das USB-Kabel auf dem Telefon sofort und endgültig: Die Fotos landen weder in „Zuletzt gelöscht“ noch im Papierkorb des Telefons. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder (ein Kontrollkästchen beim Bestätigen), damit du es erneut importieren kannst. In einem Ordner auf deinem Computer landen die Dateien im Papierkorb."),
         ("Wie verbinde ich mein iPhone mit PhotoCull?",
          "Verwende ein USB-Kabel, entsperre das iPhone und tippe auf „Vertrauen“, wenn du dazu aufgefordert wirst. Am Mac ist nichts weiter nötig. Installiere unter Windows die kostenlose App Apple Devices aus dem Microsoft Store, die den Treiber bereitstellt, mit dem PhotoCull das iPhone lesen kann."),
         ("Kann ich die Fotos eines Android-Telefons an meinem Mac oder PC sortieren?",
-         "Ja. PhotoCull verbindet sich mit einem Android-Telefon per WLAN an einem Mac oder Windows-PC oder per USB unter Windows. Du bekommst dieselbe Reiseansicht, denselben Vergleich nebeneinander und dasselbe gesammelte Löschen wie beim iPhone. Das Telefon braucht die kostenlose <a href=\"{play}\">TripSweep-App</a> (Android 11 oder neuer), geöffnet im Tab „Löschen“."),
-        ("Wie verbinde ich mein Android-Telefon per WLAN?",
-         "Bringe Telefon und Computer in dasselbe WLAN und öffne in TripSweep auf dem Telefon den Tab „Löschen“. Klicke in PhotoCull auf „Android-Telefon“ und wähle dein Telefon, dann erlaubst du den Computer auf dem Telefon: Auf beiden Bildschirmen erscheint derselbe 4-stellige Code. Das machst du nur einmal; beim nächsten Mal verbindet es sich von selbst. <a href=\"{post:sort-android-photos-on-mac}\">Schritt-für-Schritt-Anleitung für den Mac</a>."),
-        ("Warum sieht mein Mac mein Android-Telefon nicht per USB?",
-         "macOS unterstützt die Art, wie Android-Telefone Dateien per USB freigeben (MTP), von Haus aus nicht, deshalb sieht ein Mac sie meist nicht. Nutze stattdessen die WLAN-Verbindung: Sie funktioniert an jedem Mac, ohne Treiber. Unter Windows funktionieren USB und WLAN."),
-        ("Ist die WLAN-Verbindung zu meinem Telefon sicher?",
-         "Ja. Telefon und Computer sprechen nur in deinem lokalen Netzwerk miteinander, über eine verschlüsselte Verbindung, und erst nachdem du den Computer auf dem Telefon mit einem übereinstimmenden Code erlaubt hast. Nichts läuft über das Internet, und du kannst einen Computer jederzeit in TripSweep wieder sperren."),
+         "Ja, per USB-Kabel: an jedem Windows-10/11-PC und an einem Mac mit macOS 27 oder neuer. Du bekommst dieselbe Reiseansicht, denselben Vergleich nebeneinander und dasselbe gesammelte Löschen wie beim iPhone. Auf dem Telefon muss nichts installiert werden."),
+        ("Wie verbinde ich mein Android-Telefon?",
+         "Schließe das Telefon per USB-Kabel an den Computer an, entsperre es und wähle in seiner USB-Benachrichtigung „Dateiübertragung“. Klicke in PhotoCull auf „Android-Telefon“ und dann auf „Per USB verbinden“. Anleitungen: <a href=\"{post:sort-android-photos-on-mac}\">am Mac</a>, <a href=\"{post:sort-android-photos-on-pc}\">am Windows-PC</a>."),
+        ("Warum sieht mein Mac mein Android-Telefon nicht?",
+         "PhotoCull liest Android-Telefone per USB unter macOS 27 oder neuer; auf einem älteren Mac zeigt die App eine entsprechende Meldung. Prüfe unter macOS 27 oder neuer, ob das Telefon entsperrt ist und in seiner USB-Benachrichtigung „Dateiübertragung“ gewählt ist. Unter Windows 10/11 funktioniert die USB-Verbindung mit jeder Version."),
+        ("Muss ich etwas auf meinem Telefon installieren?",
+         "Nein. PhotoCull funktioniert allein, ohne dass etwas auf dem Telefon installiert werden muss und ohne andere App. Ein iPhone oder ein Android-Telefon braucht nur ein USB-Kabel. Unter Windows braucht das Lesen eines iPhones zusätzlich die kostenlose App Apple Devices auf dem PC, aus dem Microsoft Store."),
         ("Was passiert mit Fotos, die ich auf einem Android-Telefon lösche?",
-         "Du bestätigst das Löschen auf dem Telefon in TripSweep, und die Fotos landen im Papierkorb des Telefons, wo sie 30 Tage bleiben und wiederhergestellt werden können. PhotoCull löscht von sich aus nie etwas endgültig."),
-        ("Brauche ich die iOS-App TripSweep?",
-         "Nein. Durchsehen, Vergleichen, Sortieren und bei einem iPhone auch das Löschen über USB funktionieren ohne sie (mit ausgeschaltetem iCloud-Fotos und auf einem Mac mit macOS 27 oder neuer). Sie bleibt eine Option: Sie löscht über „Zuletzt gelöscht“ des iPhones (30 Tage) und ist der Weg, wenn iCloud-Fotos eingeschaltet ist oder auf macOS 26 oder älter. Ein Android-Telefon braucht dagegen die TripSweep-Android-App, um sich überhaupt zu verbinden und um zu löschen. Ordner auf deinem Computer lassen sich ohne beides sortieren."),
+         "PhotoCull löscht sie direkt über das USB-Kabel, nachdem du bestätigt hast. Das Löschen ist sofort und endgültig: Die Fotos landen nicht im Papierkorb des Telefons. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder (ein Kontrollkästchen beim Bestätigen), sodass sich ein Fehler rückgängig machen lässt."),
         ("Wie finde ich doppelte Fotos in einem Ordner auf meinem Mac oder PC?",
          "Öffne den Ordner in PhotoCull („Ordner öffnen“ oder per Drag-and-drop ins Fenster ziehen). Die App durchsucht auch die Unterordner, vergleicht, was auf den Fotos zu sehen ist, und versieht exakte Kopien, Serienaufnahmen und fast identische Aufnahmen mit demselben „≈ N“-Abzeichen. Behalte die beste Aufnahme jeder Gruppe und schicke den Rest in den Papierkorb. Anleitungen: <a href=\"{post:find-duplicate-photos-on-mac}\">am Mac</a>, <a href=\"{post:find-duplicate-photos-on-windows}\">unter Windows</a>."),
         ("Kann ich PhotoCull für Fotos auf meinem Computer verwenden, nicht auf einem iPhone?",
@@ -66,17 +61,17 @@ FAQ_PHOTOCULL = dict(
         ("Welche Macs unterstützt PhotoCull?",
          "Macs mit Apple Silicon unter macOS 11 oder neuer. Die App ist von Apple signiert und notarisiert, sodass sie ohne Sicherheitswarnung geöffnet wird."),
         ("Ist PhotoCull kostenlos? Gibt es ein Abo?",
-         "PhotoCull ist kostenlos erhältlich und es gibt kein Abo. Durchsehen, Vergleichen und Sortieren sind kostenlos, und das Sortieren eines Ordners auf deinem Computer ist nie begrenzt. Fotos per USB von einem iPhone zu löschen hat kein Tageslimit und kostet nichts. Läuft das Löschen über TripSweep (ein Android-Telefon oder ein iPhone, wenn du diesen Weg wählst), ist es auf 6 Fotos pro Tag kostenlos und 15 mit TripSweep Pro begrenzt, einem Einmalkauf in der TripSweep-App. Pro + Desktop wird nicht mehr verkauft; wer es schon gekauft hat, behält das unbegrenzte Löschen."),
+         "Ja, PhotoCull ist kostenlos, ohne Abo und ohne In-App-Kauf. Durchsehen, Vergleichen, Sortieren und Löschen sind kostenlos, ohne Tageslimit, auf einem Telefon wie in einem Ordner auf deinem Computer."),
         ("Sendet PhotoCull meine Fotos an einen Server oder in die Cloud?",
          "Nein. PhotoCull arbeitet 100 % auf dem Gerät: kein Konto, keine Cloud, und kein Foto, kein Video und kein Standort wird jemals irgendwohin gesendet. Die Ortserkennung und die Erkennung ähnlicher Fotos laufen auf deinem Computer. Es können nur anonyme, abschaltbare Nutzungsstatistiken gesendet werden."),
         ("Verändert PhotoCull meine Originalfotos?",
          "Nein. PhotoCull liest deine Fotos nur, um sie anzuzeigen und zu vergleichen. Die einzige Änderung, die es je vornimmt, ist das Löschen, das du bestätigst."),
         ("Wie blende ich mein Zuhause und meinen Arbeitsplatz in der Reiseansicht aus?",
-         "Füge sie als ausgeschlossene Orte hinzu: Der Alltag erscheint dann nicht mehr als Reise und deine echten Reisen treten hervor. Die Einstellung ist dieselbe wie in der iOS-App."),
+         "Füge sie als ausgeschlossene Orte hinzu: Der Alltag erscheint dann nicht mehr als Reise und deine echten Reisen treten hervor."),
         ("Kann ich nach einem Urlaub am Computer aufräumen?",
-         "Ja, das ist der typische Einsatz. Verbinde nach einer Reise das iPhone, öffne diese Reise in PhotoCull, vergleiche die ähnlichen Aufnahmen, behalte die beste jeder Gruppe und lösche den Rest. Die <a href=\"{ts}\">TripSweep-App</a> kann die ganze Reise auch exportieren, bevor du etwas löschst."),
+         "Ja, das ist der typische Einsatz. Verbinde nach einer Reise das Telefon, öffne diese Reise in PhotoCull, vergleiche die ähnlichen Aufnahmen, behalte die beste jeder Gruppe und lösche den Rest."),
         ("Kann ich PhotoCull nutzen, um ein Fotoalbum oder ein Backup vorzubereiten?",
-         "PhotoCull hilft dir zu entscheiden, was behaltenswert ist: Sortiere die Reise, entferne die doppelten und fast identischen Aufnahmen und sichere oder teile dann, was übrig bleibt. Die <a href=\"{ts}\">TripSweep-App</a> kann eine ganze Reise exportieren oder teilen."),
+         "PhotoCull hilft dir zu entscheiden, was behaltenswert ist: Sortiere die Reise, entferne die doppelten und fast identischen Aufnahmen und sichere oder teile dann, was übrig bleibt."),
     ],
     footer_copy="© 2026 PhotoCull. Entwickelt von Jeffrey Brignoli.",
     footer_privacy="Datenschutz", footer_kofi="Ko-fi",
@@ -102,13 +97,14 @@ dict(slug="sort-iphone-photos-on-mac",
       <p><strong>2. iPhone anschließen.</strong> Verbinde es per USB-Kabel, entsperre es und tippe auf „Vertrauen“.</p>
       <p><strong>3. Reise für Reise sortieren.</strong> Die Ansicht „Reisen“ gruppiert deine Fotorolle nach Datum und Ort und zeigt, wie viel Platz jede Reise belegt. Fang mit der größten an.</p>
       <p><strong>4. Vergleichen und markieren.</strong> Ähnliche Fotos tragen ein Abzeichen: Öffne bis zu sechs nebeneinander, behalte das beste und markiere den Rest, dazu Bildschirmfotos und große Videos, die du nicht brauchst.</p>
-      <p><strong>5. Sicher löschen.</strong> Bei ausgeschaltetem iCloud-Fotos und macOS 27 oder neuer löscht PhotoCull die Fotos direkt über das USB-Kabel. Das Löschen ist auf dem iPhone endgültig: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Mac auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder, sodass sich ein Fehler durch erneutes Importieren der Datei rückgängig machen lässt. Ist iCloud-Fotos eingeschaltet oder läuft dein Mac mit macOS 26 oder älter, nimm stattdessen die kostenlose <a href="{ts}">TripSweep-App</a>: Sie löscht über „Zuletzt gelöscht“, du hast also 30 Tage Zeit, es dir anders zu überlegen.</p>
+      <p><strong>5. Sicher löschen.</strong> Bei ausgeschaltetem iCloud-Fotos und macOS 27 oder neuer löscht PhotoCull die Fotos direkt über das USB-Kabel. Das Löschen ist auf dem iPhone sofort und endgültig: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Mac auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder, sodass sich ein Fehler durch erneutes Importieren der Datei rückgängig machen lässt. Ist iCloud-Fotos eingeschaltet, schalte es aus (Einstellungen > [dein Name] > iCloud > Fotos) oder lösche in der Fotos-App des iPhones.</p>
 
       <h2>Gut zu wissen</h2>
       <ul>
         <li>Alles bleibt auf deinem Mac und deinem iPhone: kein Konto, keine Cloud, kein Upload.</li>
         <li>PhotoCull verändert nie deine Originale und löscht nur, was du bestätigst.</li>
-        <li>Vom Mac aus hat das direkte Löschen kein Tageslimit. Über TripSweep erlaubt die Gratisversion 6 Löschungen pro Tag und Pro 15 (wer Pro + Desktop schon gekauft hat, behält unbegrenzt). Durchsehen und Sortieren sind kostenlos, und das Sortieren eines Fotoordners auf dem Mac ist nie begrenzt.</li>
+        <li>Unter macOS 26 oder älter zeigt und sortiert PhotoCull die Fotos des iPhones, kann sie aber nicht löschen: Ein Banner in der App weist darauf hin, und du löschst in der Fotos-App des iPhones.</li>
+        <li>PhotoCull ist kostenlos, ohne Tageslimit, und das Sortieren eines Fotoordners auf dem Mac funktioniert genauso.</li>
       </ul>"""),
 dict(slug="sort-iphone-photos-on-pc",
      title="iPhone-Fotos am Windows-PC sortieren: so geht's",
@@ -127,7 +123,7 @@ dict(slug="sort-iphone-photos-on-pc",
       <p><strong>2. PhotoCull installieren.</strong> Aus dem Microsoft Store oder <a href="{win}">kostenlos herunterladen</a> (Windows 10/11, 64 Bit). Der Download ist noch nicht signiert, daher kann SmartScreen beim ersten Start warnen.</p>
       <p><strong>3. iPhone anschließen.</strong> Verbinde es per USB-Kabel, entsperre es und tippe auf „Vertrauen“.</p>
       <p><strong>4. Reise für Reise sortieren.</strong> Die Ansicht „Reisen“ gruppiert deine Fotorolle nach Datum und Ort und zeigt, wie viel Platz jede Reise belegt. Fang mit der größten an.</p>
-      <p><strong>5. Vergleichen, markieren, löschen.</strong> Ähnliche Fotos tragen ein Abzeichen: Vergleiche bis zu sechs nebeneinander, behalte das beste und markiere den Rest. Bei ausgeschaltetem iCloud-Fotos löscht PhotoCull sie direkt über das USB-Kabel, ohne Tageslimit. Das Löschen ist auf dem iPhone endgültig (kein „Zuletzt gelöscht“), aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem PC auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder. Ist iCloud-Fotos eingeschaltet, nimm stattdessen die kostenlose <a href="{ts}">TripSweep-App</a>: Sie löscht über „Zuletzt gelöscht“, du hast also 30 Tage Zeit, es dir anders zu überlegen.</p>
+      <p><strong>5. Vergleichen, markieren, löschen.</strong> Ähnliche Fotos tragen ein Abzeichen: Vergleiche bis zu sechs nebeneinander, behalte das beste und markiere den Rest. Bei ausgeschaltetem iCloud-Fotos löscht PhotoCull sie direkt über das USB-Kabel, ohne Tageslimit. Das Löschen ist auf dem iPhone endgültig (kein „Zuletzt gelöscht“), aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem PC auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder. Ist iCloud-Fotos eingeschaltet, schalte es aus (Einstellungen > [dein Name] > iCloud > Fotos) oder lösche in der Fotos-App des iPhones.</p>
 
       <h2>Gut zu wissen</h2>
       <ul>
@@ -155,8 +151,8 @@ dict(slug="sort-photos-on-computer",
       <p><strong>4. Auf einmal löschen.</strong> Markiere Hunderte Fotos und bestätige einmal.</p>
 
       <h2>PhotoCull macht genau das</h2>
-      <p><a href="{pc}">PhotoCull</a> ist eine kostenlose Desktop-App für Mac und Windows. Die Ansicht „Reisen“ gruppiert die Mediathek nach Reisen und zeigt den Speicherplatz jeder Reise, ähnliche Fotos tragen eine Markierung, und du kannst bis zu sechs nebeneinander vergleichen. Sie liest ein iPhone per USB oder einen beliebigen Ordner auf deinem Computer, arbeitet 100 % auf dem Gerät und verändert deine Originale nie.</p>
-      <p>Bei einem iPhone löscht PhotoCull direkt über das USB-Kabel, wenn iCloud-Fotos ausgeschaltet ist (und auf einem Mac macOS 27 oder neuer läuft). Das Löschen ist auf dem iPhone endgültig, standardmäßig bleibt 30 Tage lang eine Kopie auf deinem Computer; andernfalls löscht die kostenlose <a href="{ts}">TripSweep-App</a> über „Zuletzt gelöscht“. Das Sortieren eines Ordners auf deinem Computer ist nie begrenzt.</p>
+      <p><a href="{pc}">PhotoCull</a> ist eine kostenlose Desktop-App für Mac und Windows. Die Ansicht „Reisen“ gruppiert die Mediathek nach Reisen und zeigt den Speicherplatz jeder Reise, ähnliche Fotos tragen eine Markierung, und du kannst bis zu sechs nebeneinander vergleichen. Sie liest ein iPhone oder Android-Telefon per USB-Kabel oder einen beliebigen Ordner auf deinem Computer, arbeitet 100 % auf dem Gerät und verändert deine Originale nie.</p>
+      <p>Auf einem Telefon löscht PhotoCull direkt über das USB-Kabel, unter Windows 10/11 oder auf einem Mac mit macOS 27 oder neuer (bei einem iPhone mit ausgeschaltetem iCloud-Fotos). Das Löschen ist auf dem Telefon endgültig, standardmäßig bleibt 30 Tage lang eine Kopie auf deinem Computer. In einem Ordner landen die Dateien im Papierkorb. Das Sortieren ist nie begrenzt.</p>
 
       <h2>Tipps für eine lange Sitzung</h2>
       <ul>
@@ -175,21 +171,21 @@ dict(slug="free-up-iphone-from-mac-or-pc",
         <li>Einen Mac (Apple Silicon, macOS 11+) oder einen Windows-10/11-PC.</li>
         <li>Ein USB-Kabel. Unter Windows zusätzlich die kostenlose App Apple Devices aus dem Microsoft Store.</li>
         <li><a href="{pc}">PhotoCull</a>, kostenlos für beide Systeme.</li>
-        <li>Zum Löschen vom iPhone: iCloud-Fotos ausgeschaltet und auf einem Mac macOS 27 oder neuer. Andernfalls die kostenlose <a href="{ts}">TripSweep-App</a> auf dem iPhone.</li>
+        <li>Zum Löschen vom iPhone: iCloud-Fotos ausgeschaltet und auf einem Mac macOS 27 oder neuer. Unter macOS 26 oder älter zeigt und sortiert PhotoCull die Fotos weiterhin, und du löschst sie in der Fotos-App des iPhones.</li>
       </ul>
 
       <h2>Schritt für Schritt</h2>
       <p><strong>1. Verbinden und vertrauen.</strong> Schließe das iPhone an, entsperre es und tippe auf „Vertrauen“.</p>
       <p><strong>2. Die Ansicht „Reisen“ öffnen.</strong> PhotoCull gruppiert deine Fotomediathek nach Reisen und zeigt den Speicherplatz jeder Reise.</p>
       <p><strong>3. Die größten Reisen sortieren.</strong> Vergleiche ähnliche Aufnahmen, behalte die beste und markiere den Rest, dazu Screenshots und große Videos, die du nicht brauchst.</p>
-      <p><strong>4. Das Löschen bestätigen.</strong> Bei ausgeschaltetem iCloud-Fotos (und macOS 27 oder neuer auf einem Mac) löscht PhotoCull die Fotos direkt über das USB-Kabel, unter Windows ebenso. Das Löschen ist auf dem iPhone endgültig, aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder. Andernfalls löscht TripSweep über „Zuletzt gelöscht“.</p>
-      <p><strong>5. „Zuletzt gelöscht“ leeren, wenn du TripSweep genutzt hast.</strong> Über TripSweep kommt der Speicherplatz zurück, sobald das Album geleert ist. Das direkte Löschen nutzt dieses Album nicht.</p>
+      <p><strong>4. Das Löschen bestätigen.</strong> Bei ausgeschaltetem iCloud-Fotos (und macOS 27 oder neuer auf einem Mac) löscht PhotoCull die Fotos direkt über das USB-Kabel, unter Windows ebenso. Das Löschen ist auf dem iPhone sofort und endgültig, aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder.</p>
+      <p><strong>5. Wenn iCloud-Fotos eingeschaltet ist.</strong> PhotoCull verweigert das Löschen: Schalte iCloud-Fotos aus (Einstellungen > [dein Name] > iCloud > Fotos) oder lösche in der Fotos-App des iPhones.</p>
 
       <h2>Ist das sicher?</h2>
-      <p>Ja: Deine Fotos bleiben auf deinen Geräten, ohne Konto, ohne Cloud und ohne Upload. PhotoCull liest deine Fotos nur, bis du bestätigst. Ein direktes Löschen ist auf dem iPhone endgültig, aber standardmäßig bleibt 30 Tage lang eine Kopie auf deinem Computer; über TripSweep bleiben gelöschte Fotos 30 Tage in „Zuletzt gelöscht“.</p>
+      <p>Ja: Deine Fotos bleiben auf deinen Geräten, ohne Konto, ohne Cloud und ohne Upload. PhotoCull liest deine Fotos nur, bis du bestätigst. Ein Löschen ist auf dem iPhone endgültig, aber standardmäßig bleibt 30 Tage lang eine Kopie auf deinem Computer.</p>
 
       <h2>Wie viele Fotos kann ich pro Tag löschen?</h2>
-      <p>Bei einem iPhone hat das direkte Löschen über USB kein Tageslimit und erfordert keinen Kauf. Die Limits gelten nur, wenn das Löschen über TripSweep läuft (ein Android-Telefon oder ein iPhone, wenn iCloud-Fotos eingeschaltet ist oder der Mac macOS 26 oder älter hat): Die kostenlose Version erlaubt 6 Fotos pro Tag und TripSweep Pro 15, und wer Pro + Desktop (nicht mehr erhältlich) schon gekauft hat, behält unbegrenzt. Pro ist ein Einmalkauf ohne Abo. Durchsehen, Vergleichen und Sortieren sind kostenlos, und das Sortieren eines Ordners auf deinem Computer ist nie begrenzt.</p>
+      <p>So viele du willst: Es gibt kein Tageslimit und nichts zu kaufen. PhotoCull ist kostenlos, ohne Abo.</p>
 
       <h2>Unter Windows</h2>
       <p>Die Schritte sind unter Windows 10 und 11 dieselben. Installiere zuerst die kostenlose App Apple Devices aus dem Microsoft Store, damit PhotoCull das iPhone lesen kann. Die App ist noch nicht codesigniert, daher warnt SmartScreen beim ersten Start eventuell.</p>"""),
@@ -215,10 +211,9 @@ dict(slug="compare-similar-photos-keep-the-best",
 
       <h2>Mit PhotoCull</h2>
       <p><a href="{pc}">PhotoCull</a> zeigt eine Markierung an ähnlichen Fotos, öffnet bis zu sechs nebeneinander und lässt dich den Rest mit einem Klick markieren. Es funktioniert mit einem per USB verbundenen iPhone oder mit jedem Ordner auf deinem Mac oder PC, offline, und verändert deine Originale nie.</p>
-      <p>Auf dem Telefon selbst schlägt die <a href="{ts}">TripSweep-App</a> die beste Aufnahme jeder Gruppe anhand von Schärfe, der ästhetischen Bewertung von Apple und Gesichtern vor, und ihre Schaltfläche „1 pro Gruppe behalten“ erledigt eine ganze Kategorie auf einmal.</p>
 
       <h2>Behalten statt bereuen</h2>
-      <p>Wenn du unsicher bist, behalte zwei. Über TripSweep laufen Löschungen auf einem iPhone 30 Tage lang über „Zuletzt gelöscht“; beim direkten Löschen über USB bewahrt PhotoCull standardmäßig 30 Tage lang eine Kopie auf deinem Computer auf. In beiden Fällen kannst du es dir noch anders überlegen.</p>"""),
+      <p>Wenn du unsicher bist, behalte zwei. Wenn PhotoCull von einem Telefon löscht, bewahrt es standardmäßig 30 Tage lang eine Kopie auf deinem Computer auf; in einem Ordner landen die Dateien im Papierkorb. In beiden Fällen kannst du es dir noch anders überlegen.</p>"""),
 dict(slug="find-duplicate-photos-on-mac",
      title="Doppelte und ähnliche Fotos am Mac finden und löschen",
      desc="Doppelte Fotos am Mac finden: exakte Kopien, Serien und fast identische Aufnahmen in Ordnern oder auf einer externen Festplatte, den Rest in den Papierkorb.",
@@ -299,9 +294,9 @@ dict(slug="sort-photo-folder-external-drive",
       </ul>"""),
 dict(slug="sort-android-photos-on-mac",
      title="Android-Fotos am Mac sortieren: so geht's",
-     desc="Ein Mac liest Android-Telefone nicht per USB. So sortierst du Tausende Android-Fotos trotzdem am Mac, per WLAN, und löschst, was du nicht brauchst.",
+     desc="Ein Mac tat sich lange schwer, Android-Telefone per USB zu lesen. So sortierst du Tausende Android-Fotos am Mac mit macOS 27 und löschst, was du nicht brauchst.",
      h1="So sortierst du deine Android-Fotos am Mac",
-     body="""      <p>Schließt du ein Android-Telefon an einen Mac an, passiert meist nichts: macOS liest Android-Telefone nicht per USB, wie Windows es tut. Dabei ist ein Mac der beste Ort, um eine große Fotorolle zu sortieren, mit großem Bildschirm, Maus und Vergleich nebeneinander. Das funktioniert.</p>
+     body="""      <p>Schließt du ein Android-Telefon an einen Mac an, passiert meist nichts Nützliches: macOS hat Android-Telefone nie per USB gelesen, wie Windows es tut. Dabei ist ein Mac der beste Ort, um eine große Fotorolle zu sortieren, mit großem Bildschirm, Maus und Vergleich nebeneinander. Das funktioniert.</p>
 
       <h2>Was macOS allein kann</h2>
       <ul>
@@ -310,19 +305,19 @@ dict(slug="sort-android-photos-on-mac",
         <li><strong>Cloud-Upload:</strong> alles an einen Online-Dienst zu senden, nur um es zu sortieren, ist langsam, verbraucht dein Datenvolumen und legt deine Fotos auf dem Server eines anderen ab.</li>
       </ul>
 
-      <h2>Mit PhotoCull, per WLAN, Schritt für Schritt</h2>
-      <p><strong>1. Beide Apps installieren.</strong> <a href="{mac}">PhotoCull für Mac kostenlos herunterladen</a> (macOS 11 oder neuer auf Apple Silicon) und die kostenlose <a href="{play}">TripSweep-App aus Google Play</a> auf dem Telefon installieren (Android 11 oder neuer).</p>
-      <p><strong>2. Dasselbe WLAN.</strong> Bringe das Telefon in dasselbe WLAN wie den Mac und öffne in TripSweep den Tab „Löschen“.</p>
-      <p><strong>3. Einmal verbinden.</strong> Klicke in PhotoCull auf „Android-Telefon“ und wähle dein Telefon. Erlaube den Mac auf dem Telefon: Auf beiden Bildschirmen erscheint derselbe 4-stellige Code. Beim nächsten Mal verbindet es sich von selbst.</p>
+      <h2>Mit PhotoCull, per USB, Schritt für Schritt</h2>
+      <p><strong>1. PhotoCull installieren.</strong> <a href="{mac}">PhotoCull für Mac kostenlos herunterladen</a>. Zum Lesen eines Android-Telefons ist macOS 27 oder neuer nötig; auf einem älteren Mac zeigt die App eine entsprechende Meldung. Auf dem Telefon muss nichts installiert werden.</p>
+      <p><strong>2. Telefon anschließen.</strong> Verbinde es per USB-Kabel, entsperre es und wähle in seiner USB-Benachrichtigung „Dateiübertragung“.</p>
+      <p><strong>3. Verbinden.</strong> Klicke in PhotoCull auf „Android-Telefon“ und dann auf „Per USB verbinden“.</p>
       <p><strong>4. Reise für Reise sortieren.</strong> Die Ansicht „Reisen“ gruppiert die Fotorolle nach Datum und Ort und zeigt, wie viel Platz jede Reise belegt. Ähnliche Fotos tragen ein Abzeichen: Vergleiche bis zu sechs nebeneinander, behalte das beste und markiere den Rest.</p>
-      <p><strong>5. Sicher löschen.</strong> Klicke auf „Löschen“ und bestätige auf dem Telefon in TripSweep. Die Fotos landen 30 Tage im Papierkorb des Telefons, ein Fehler lässt sich also rückgängig machen.</p>
+      <p><strong>5. Sicher löschen.</strong> Klicke auf „Löschen“ und bestätige. PhotoCull löscht die Fotos direkt über das Kabel: Das Löschen ist auf dem Telefon sofort und endgültig (die Fotos landen nicht in seinem Papierkorb), aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Mac auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder, sodass sich ein Fehler rückgängig machen lässt.</p>
 
       <h2>Gut zu wissen</h2>
       <ul>
-        <li>Die Verbindung bleibt in deinem lokalen Netzwerk und ist verschlüsselt; nichts läuft über das Internet.</li>
-        <li>PhotoCull verändert nie deine Originale und löscht nur, was du auf dem Telefon bestätigst.</li>
-        <li>Vom Computer aus erlaubt die Gratisversion 6 Löschungen pro Tag, TripSweep Pro 15, und wer Pro + Desktop schon gekauft hat, behält unbegrenzt. Durchsehen und Sortieren sind immer kostenlos.</li>
-        <li>Du hast auch ein iPhone? Es wird stattdessen per USB-Kabel mit dem Mac verbunden.</li>
+        <li>Alles bleibt auf deinem Mac und deinem Telefon: kein Konto, keine Cloud, kein Upload.</li>
+        <li>PhotoCull verändert nie deine Originale und löscht nur, was du bestätigst.</li>
+        <li>PhotoCull ist kostenlos, ohne Tageslimit.</li>
+        <li>Du hast auch ein iPhone? Es wird ebenfalls per USB-Kabel mit dem Mac verbunden.</li>
       </ul>"""),
 dict(slug="sort-android-photos-on-pc",
      title="Android-Fotos am Windows-PC sortieren: so geht's",
@@ -338,21 +333,21 @@ dict(slug="sort-android-photos-on-pc",
       </ul>
 
       <h2>Mit PhotoCull, Schritt für Schritt</h2>
-      <p><strong>1. Beide Apps installieren.</strong> Hole dir PhotoCull kostenlos <a href="{win}">für Windows 10 oder 11</a> und die kostenlose <a href="{play}">TripSweep-App aus Google Play</a> auf dem Telefon (Android 11 oder neuer).</p>
-      <p><strong>2. Per USB oder WLAN verbinden.</strong> Per USB: Schließe das Telefon an und wähle in der USB-Benachrichtigung „Dateiübertragung“. Per WLAN: Bringe beide in dasselbe Netzwerk. Öffne dann in TripSweep den Tab „Löschen“ und klicke in PhotoCull auf „Android-Telefon“.</p>
+      <p><strong>1. PhotoCull installieren.</strong> Hole es dir kostenlos <a href="{win}">für Windows 10 oder 11</a> oder aus dem Microsoft Store. Auf dem Telefon muss nichts installiert werden.</p>
+      <p><strong>2. Per USB verbinden.</strong> Schließe das Telefon an, entsperre es und wähle in seiner USB-Benachrichtigung „Dateiübertragung“. Klicke dann in PhotoCull auf „Android-Telefon“ und auf „Per USB verbinden“.</p>
       <p><strong>3. Reise für Reise sortieren.</strong> Die Ansicht „Reisen“ gruppiert die Fotorolle nach Datum und Ort und zeigt, wie viel Platz jede Reise belegt. Fang mit der größten an.</p>
       <p><strong>4. Vergleichen und markieren.</strong> Ähnliche Fotos tragen ein Abzeichen: Öffne bis zu sechs nebeneinander, behalte das beste und markiere den Rest, dazu Screenshots und große Videos.</p>
-      <p><strong>5. Sicher löschen.</strong> Bestätige auf dem Telefon in TripSweep: Die Fotos landen 30 Tage im Papierkorb des Telefons.</p>
+      <p><strong>5. Sicher löschen.</strong> Bestätige, und PhotoCull löscht die Fotos direkt über das Kabel. Das Löschen ist auf dem Telefon sofort und endgültig (kein Papierkorb), aber standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem PC auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder.</p>
 
       <h2>Gut zu wissen</h2>
       <ul>
         <li>Alles bleibt auf deinem PC und deinem Telefon: kein Konto, keine Cloud, kein Upload.</li>
-        <li>Das Löschen im Datei-Explorer ist sofort und endgültig; über TripSweep bleibt das Sicherheitsnetz von 30 Tagen erhalten.</li>
-        <li>Vom PC aus erlaubt die Gratisversion 6 Löschungen pro Tag, TripSweep Pro 15, und wer Pro + Desktop schon gekauft hat, behält unbegrenzt. Das Sortieren eines Ordners auf dem PC ist nie begrenzt.</li>
+        <li>Das Löschen im Datei-Explorer ist endgültig, ohne Kopie; PhotoCull bewahrt standardmäßig die 30-Tage-Kopie auf dem PC auf.</li>
+        <li>PhotoCull ist kostenlos, ohne Tageslimit, und das Sortieren eines Ordners auf dem PC funktioniert genauso.</li>
       </ul>"""),
 dict(slug="free-up-android-from-mac-or-pc",
      title="Android-Speicher freigeben: vom Mac oder PC aus aufräumen",
-     desc="Verbinde dein Android-Telefon, sortiere Fotos am großen Bildschirm und lösche, was du nicht brauchst, ohne Google One und ohne etwas hochzuladen.",
+     desc="Verbinde dein Android-Telefon per USB, sortiere Fotos am großen Bildschirm und lösche, was du nicht brauchst, ohne Google One und ohne etwas hochzuladen.",
      h1="So gibst du Android-Speicher von einem Mac oder PC aus frei",
      body="""      <p>Wenn einem Android-Telefon der Platz ausgeht, sind fast immer Fotos und Videos der Grund. Sie am kleinen Bildschirm aufzuräumen ist mühsam. Am Computer siehst du mehr auf einmal und entscheidest schneller, ohne mehr Cloud-Speicher zu kaufen.</p>
 
@@ -360,19 +355,19 @@ dict(slug="free-up-android-from-mac-or-pc",
       <p>Ein großer Bildschirm zeigt Dutzende Fotos auf einmal, mit der Maus wählst du Hunderte in Sekunden aus, und fast identische Aufnahmen nebeneinander zu vergleichen ist viel einfacher, als hin und her zu wischen. Eine Fotorolle, die am Telefon einen ganzen Abend dauert, ist in Minuten erledigt.</p>
 
       <h2>Die Methode</h2>
-      <p><strong>1. Das Telefon verbinden.</strong> Installiere <a href="{pc}">PhotoCull</a> auf deinem Mac oder PC und die kostenlose <a href="{play}">TripSweep-App</a> auf dem Telefon. Verbinde per WLAN (Mac und Windows) oder per USB (Windows), mit TripSweep geöffnet im Tab „Löschen“.</p>
+      <p><strong>1. Das Telefon verbinden.</strong> Installiere <a href="{pc}">PhotoCull</a> auf einem Windows-10/11-PC oder einem Mac mit macOS 27 oder neuer; auf dem Telefon muss nichts installiert werden. Schließe das Telefon per USB-Kabel an, entsperre es, wähle in seiner USB-Benachrichtigung „Dateiübertragung“ und klicke dann auf „Android-Telefon“ und „Per USB verbinden“.</p>
       <p><strong>2. Mit dem Schwersten beginnen.</strong> Die Ansicht „Reisen“ zeigt den Platz jeder Reise; lange Videos und alte Urlaube geben meist am meisten frei.</p>
       <p><strong>3. Die Beinahe-Kopien entfernen.</strong> Serienaufnahmen und wiederholte Aufnahmen derselben Szene tragen ein Abzeichen. Vergleiche sie nebeneinander, behalte die beste und markiere den Rest.</p>
       <p><strong>4. Screenshots und unscharfe Aufnahmen entfernen.</strong> Sie haben selten einen Platz verdient und sind als Stapel schnell markiert.</p>
-      <p><strong>5. Auf dem Telefon bestätigen.</strong> TripSweep führt das Löschen aus und verschiebt die Fotos in den Papierkorb des Telefons, wo sie 30 Tage bleiben. Leere den Papierkorb, wenn du sicher bist, um den Platz zurückzubekommen.</p>
+      <p><strong>5. Das Löschen bestätigen.</strong> PhotoCull löscht die Fotos direkt über das Kabel. Das Löschen ist auf dem Telefon sofort und endgültig (kein Papierkorb zu leeren, der Platz ist sofort wieder frei), und standardmäßig bewahrt PhotoCull 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PhotoCull Trash“ im Ordner Bilder.</p>
 
       <h2>Brauche ich Google One?</h2>
       <p>Cloud-Speicher ist ein gutes Backup, aber er behält alles, auch die Duplikate. Wer zuerst aufräumt, braucht weniger Speicherplatz, auf dem Telefon und in der Cloud.</p>
 
       <h2>Gut zu wissen</h2>
       <ul>
-        <li>Kein Konto und kein Upload: Telefon und Computer sprechen über dein eigenes Netzwerk oder Kabel miteinander.</li>
-        <li>Vom Computer aus erlaubt die Gratisversion 6 Löschungen pro Tag, Pro 15, und wer Pro + Desktop schon gekauft hat, behält unbegrenzt.</li>
+        <li>Kein Konto und kein Upload: Telefon und Computer sprechen über das USB-Kabel miteinander.</li>
+        <li>PhotoCull ist kostenlos, ohne Tageslimit.</li>
       </ul>"""),
 ],
 }
