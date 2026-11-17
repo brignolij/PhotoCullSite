@@ -1,4 +1,4 @@
-/* Lightbox for the PhotoCull screenshots: a click on an <a class="window-frame"> opens the image in a modal on the same page
+/* Lightbox for the PixCuller screenshots: a click on an <a class="window-frame"> opens the image in a modal on the same page
    (Esc, a click outside or the close button close it; arrows go to the previous/next screenshot). Without JavaScript the link
    simply opens the image file. */
 (function () {

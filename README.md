@@ -1,24 +1,24 @@
-# PhotoCull
+# PixCuller
 
 Sort your iPhone or Android photos on a Mac or Windows PC: your camera roll grouped by trip, similar shots compared
-side by side (up to six at once) and hundreds of photos deleted in a few clicks. PhotoCull also sorts any folder of
+side by side (up to six at once) and hundreds of photos deleted in a few clicks. PixCuller also sorts any folder of
 photos on your computer, and never modifies your originals. It runs 100% on your devices: no account, no cloud, no upload.
 
-**Website: [photocull.idealy.ch](https://photocull.idealy.ch/)** · [Français](https://photocull.idealy.ch/fr/) · [Italiano](https://photocull.idealy.ch/it/) · [Deutsch](https://photocull.idealy.ch/de/) · [Español](https://photocull.idealy.ch/es/)
+**Website: [pixculler.idealy.ch](https://pixculler.idealy.ch/)** · [Français](https://pixculler.idealy.ch/fr/) · [Italiano](https://pixculler.idealy.ch/it/) · [Deutsch](https://pixculler.idealy.ch/de/) · [Español](https://pixculler.idealy.ch/es/)
 
-- **Mac:** [download PhotoCull for Mac](https://github.com/brignolij/PhotoCullSite/releases/latest/download/PhotoCull-Desktop.zip). Free, macOS 11+ on Apple Silicon, signed and notarized by Apple.
-- **Windows:** [get it from the Microsoft Store](https://apps.microsoft.com/detail/9n6wv393b3pl) or [download the zip](https://github.com/brignolij/PhotoCullSite/releases/latest/download/PhotoCull-Windows-x64.zip). Free, Windows 10/11 (64-bit). Reading an iPhone needs the free Apple Devices app from the Microsoft Store. The zip is not code-signed yet, so SmartScreen may warn on first launch.
-- **Phones:** an iPhone or an Android phone connects by USB cable, with nothing to install on the phone, and PhotoCull deletes its photos directly over the cable (permanent on the phone, with a 30-day copy kept on the computer by default). Deleting on an iPhone, and reading an Android phone at all, need macOS 27 or later on a Mac; any Windows 10/11 PC works. Deleting on an iPhone also needs iCloud Photos turned off. PhotoCull needs no other app.
-- [FAQ](https://photocull.idealy.ch/faq.html) · [Guides](https://photocull.idealy.ch/blog.html) · [Privacy policy](https://photocull.idealy.ch/privacy.html)
+- **Mac:** [download PixCuller for Mac](https://github.com/brignolij/PixCullerSite/releases/latest/download/PixCuller-Desktop.zip). Free, macOS 11+ on Apple Silicon, signed and notarized by Apple.
+- **Windows:** [get it from the Microsoft Store](https://apps.microsoft.com/detail/9n6wv393b3pl) or [download the zip](https://github.com/brignolij/PixCullerSite/releases/latest/download/PixCuller-Windows-x64.zip). Free, Windows 10/11 (64-bit). Reading an iPhone needs the free Apple Devices app from the Microsoft Store. The zip is not code-signed yet, so SmartScreen may warn on first launch.
+- **Phones:** an iPhone or an Android phone connects by USB cable, with nothing to install on the phone, and PixCuller deletes its photos directly over the cable (permanent on the phone, with a 30-day copy kept on the computer by default). Deleting on an iPhone, and reading an Android phone at all, need macOS 27 or later on a Mac; any Windows 10/11 PC works. Deleting on an iPhone also needs iCloud Photos turned off. PixCuller needs no other app.
+- [FAQ](https://pixculler.idealy.ch/faq.html) · [Guides](https://pixculler.idealy.ch/blog.html) · [Privacy policy](https://pixculler.idealy.ch/privacy.html)
 
-This repository holds the PhotoCull website (published by GitHub Pages) and the
-[PhotoCull releases](https://github.com/brignolij/PhotoCullSite/releases). The app's source code is not here.
+This repository holds the PixCuller website (published by GitHub Pages) and the
+[PixCuller releases](https://github.com/brignolij/PixCullerSite/releases). The app's source code is not here.
 
 ---
 
 ## Maintenance du site
 
-Site statique de PhotoCull seul. TripSweep a son propre site (`brignolij/TripSweepSite`, `tripsweep.idealy.ch`) ;
+Site statique de PixCuller seul. TripSweep a son propre site (`brignolij/TripSweepSite`, `tripsweep.idealy.ch`) ;
 les liens vers TripSweep sont absolus. Domaine géré chez Infomaniak : voir `DEPLOY.md`.
 
 Tout est généré par `generate.py` dans `sites/web/`, que le workflow `.github/workflows/pages.yml` publie à
@@ -60,27 +60,27 @@ python3 -m http.server 8000 -d sites/web
 
 ### versions.json : deux copies à garder identiques
 
-Les PhotoCull installés (jusqu'à 1.4.0 au moins, `src/PhotoCull.Core/Updates/UpdateCheck.cs`) lisent
+Les PixCuller installés (jusqu'à 1.4.0 au moins, `src/PixCuller.Core/Updates/UpdateCheck.cs`) lisent
 `https://tripsweep.idealy.ch/versions.json` (dépôt TripSweepSite). Ce dépôt en publie une copie sur
-`https://photocull.idealy.ch/versions.json` pour qu'une future version de PhotoCull la lise ici. **Tant que des
-versions anciennes de PhotoCull tournent, toute modification de `versions.json` se fait dans les deux dépôts, à
+`https://pixculler.idealy.ch/versions.json` pour qu'une future version de PixCuller la lise ici. **Tant que des
+versions anciennes de PixCuller tournent, toute modification de `versions.json` se fait dans les deux dépôts, à
 l'identique** (même schéma, entrée `desktop` comprise, et les entrées `ios` / `android` restent aussi dans la copie
 TripSweep).
 
 ### Releases
 
 Les liens « latest » du site pointent sur les releases de **ce** dépôt
-(`releases/latest/download/PhotoCull-Desktop.zip` et `PhotoCull-Windows-x64.zip`) : chaque release doit porter
+(`releases/latest/download/PixCuller-Desktop.zip` et `PixCuller-Windows-x64.zip`) : chaque release doit porter
 les deux zips. Les anciennes releases de `brignolij/TripSweepSite` restent en place, car `versions.json` (entrée
 `desktop.downloads`) et des liens externes y mènent encore.
 
 ### Redirections depuis l'ancien site
 
-Les pages PhotoCull étaient sur `tripsweep.idealy.ch` sous un préfixe `desktop`. Le site TripSweep garde à ces
+Les pages PixCuller étaient sur `tripsweep.idealy.ch` sous un préfixe `desktop`. Le site TripSweep garde à ces
 adresses de petites pages de redirection (`meta refresh` + `canonical` + `noindex`, GitHub Pages ne fait pas de
-redirection serveur), dans les 5 langues (`/fr/desktop.html` → `https://photocull.idealy.ch/fr/`, etc.) :
+redirection serveur), dans les 5 langues (`/fr/desktop.html` → `https://pixculler.idealy.ch/fr/`, etc.) :
 
-| Ancienne URL (`https://tripsweep.idealy.ch/…`) | Nouvelle URL (`https://photocull.idealy.ch/…`) |
+| Ancienne URL (`https://tripsweep.idealy.ch/…`) | Nouvelle URL (`https://pixculler.idealy.ch/…`) |
 |---|---|
 | `/desktop.html` | `/` |
 | `/desktop-faq.html` | `/faq.html` |
@@ -98,5 +98,5 @@ redirection serveur), dans les 5 langues (`/fr/desktop.html` → `https://photoc
 | `/desktop-blog-free-up-android-from-mac-or-pc.html` | `/blog-free-up-android-from-mac-or-pc.html` |
 
 La politique de confidentialité `https://tripsweep.idealy.ch/privacy.html` n'est pas redirigée : elle reste la page
-de TripSweep (et couvre encore PhotoCull pour les versions installées qui y renvoient). PhotoCull a la sienne sur
+de TripSweep (et couvre encore PixCuller pour les versions installées qui y renvoient). PixCuller a la sienne sur
 `/privacy.html` ici.
