@@ -618,8 +618,8 @@ def render_pricing(lang):
 '''
 
 
-# Real screenshots of the PixCuller window (dark theme, sample photos), one set per language:
-# assets/screenshots/pixculler-{grid,review,compare,trips}-{lang}.jpg
+# Real screenshots of the PixCuller window (light and dark theme, sample photos), one set per language:
+# assets/screenshots/pixculler-{grid,review,compare,trips,android}-{lang}-{light,dark}.jpg
 SHOTS = {
 "en": dict(
     h2="A look at the app",
@@ -673,12 +673,20 @@ SHOTS = {
 ),
 }
 
+def render_shot(lang, key, alt, lazy=True):
+    """Window screenshot as a <picture>: the dark capture for dark-mode visitors, the light one otherwise."""
+    a = lambda rel: asset_path(lang, rel)
+    base = f"assets/screenshots/pixculler-{key}-{lang}"
+    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{a(base + "-dark.webp")}" />'
+            f'<img src="{a(base + "-light.webp")}" width="1800" height="1205" alt="{alt}"{" loading=\"lazy\"" if lazy else ""} /></picture>')
+
+
 def render_desktop_shots(lang):
     d = SHOTS[lang]
     a = lambda rel: asset_path(lang, rel)
     figures = "\n".join(
         f'''        <figure>
-          <a class="window-frame" href="{a(f'assets/screenshots/pixculler-{key}-{lang}.jpg')}" target="_blank" rel="noopener"><img src="{a(f'assets/screenshots/pixculler-{key}-{lang}.webp')}" width="1800" height="1165" alt="{caption}" loading="lazy" /></a>
+          <a class="window-frame" href="{a(f'assets/screenshots/pixculler-{key}-{lang}-light.jpg')}" target="_blank" rel="noopener">{render_shot(lang, key, caption)}</a>
           <figcaption>{caption}</figcaption>
         </figure>''' for key, caption in d["items"]
     )
@@ -751,8 +759,8 @@ def render_pixculler_home(lang):
         <a class="btn btn-primary" href="{MS_STORE_URL}" target="_blank" rel="noopener">{d['cta_ms_store']}</a>
       </div>
 
-      <a class="window-frame" href="{a(f'assets/screenshots/pixculler-grid-{lang}.jpg')}" target="_blank" rel="noopener">
-        <img src="{a(f'assets/screenshots/pixculler-grid-{lang}.webp')}" width="1800" height="1165" alt="{SHOTS[lang]['grid_alt']}" />
+      <a class="window-frame" href="{a(f'assets/screenshots/pixculler-grid-{lang}-light.jpg')}" target="_blank" rel="noopener">
+        {render_shot(lang, 'grid', SHOTS[lang]['grid_alt'], lazy=False)}
       </a>
     </section>
 
@@ -807,7 +815,7 @@ BLOG_UI = {l: CONTENT[l].BLOG_UI for l in LANGS}
 FAQS = {
     "pixculler": {l: CONTENT[l].FAQ_PIXCULLER for l in LANGS},
 }
-HERO_IMAGE = {"pixculler": "assets/screenshots/pixculler-grid-{lang}.jpg"}
+HERO_IMAGE = {"pixculler": "assets/screenshots/pixculler-grid-{lang}-light.jpg"}
 APPLE_META = {"pixculler": ""}
 
 def link_tokens(text, lang, campaign):

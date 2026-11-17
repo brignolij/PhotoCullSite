@@ -6,7 +6,27 @@
   --accent: #4a90d9;
   --accent-2: #6ad0e0;
   --border: #223049;
+  --bg-elevated-end: #0a1526;
+  --on-accent: #051320;
+  --shadow: var(--shadow);
   --radius: 16px;
+  color-scheme: dark light;
+}
+
+/* Light mode follows the visitor's system setting (the screenshots switch the same way, see render_shot in generate.py). */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f7fb;
+    --bg-elevated: #ffffff;
+    --text: #14202e;
+    --text-muted: #556278;
+    --accent: #2f6fb5;
+    --accent-2: #1c6a8a;
+    --border: #d5dde9;
+    --bg-elevated-end: #eef2f8;
+    --on-accent: #ffffff;
+    --shadow: rgba(20, 32, 46, 0.18);
+  }
 }
 
 * {
@@ -132,7 +152,7 @@ nav.links a:hover {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #051320;
+  color: var(--on-accent);
 }
 
 .btn-secondary {
@@ -158,9 +178,9 @@ nav.links a:hover {
   width: 240px;
   height: 490px;
   border-radius: 40px;
-  background: linear-gradient(160deg, var(--bg-elevated), #0a1526);
+  background: linear-gradient(160deg, var(--bg-elevated), var(--bg-elevated-end));
   border: 2px solid var(--border);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 30px 60px -20px var(--shadow);
   padding: 14px;
   position: relative;
 }
@@ -223,9 +243,9 @@ nav.links a:hover {
   margin: 56px auto 0;
   width: 240px;
   border-radius: 40px;
-  background: linear-gradient(160deg, var(--bg-elevated), #0a1526);
+  background: linear-gradient(160deg, var(--bg-elevated), var(--bg-elevated-end));
   border: 2px solid var(--border);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 30px 60px -20px var(--shadow);
   padding: 10px;
 }
 
@@ -377,7 +397,7 @@ footer .footer-links {
   border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--bg-elevated);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 30px 60px -20px var(--shadow);
   overflow: hidden;
 }
 

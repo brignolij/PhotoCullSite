@@ -35,7 +35,8 @@
   function show(index) {
     current = (index + links.length) % links.length;
     var source = links[current].querySelector('img');
-    img.src = links[current].getAttribute('href');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    img.src = links[current].getAttribute('href').replace('-light.jpg', dark ? '-dark.jpg' : '-light.jpg');
     img.alt = source ? source.alt : '';
     caption.textContent = img.alt;
   }
