@@ -33,7 +33,7 @@ FAQ_PIXCULLER = dict(
         ("Come libero spazio su iPhone da un Mac o PC?",
          "Collega il tuo iPhone via USB, apri PixCuller, seleziona i viaggi e le foto che non ti servono più e conferma. PixCuller le elimina direttamente tramite il cavo USB, su Windows 10/11 o su un Mac con macOS 27 o successivo, a patto che Foto di iCloud sia disattivato. L'eliminazione è immediata e definitiva sull'iPhone, con una copia conservata per impostazione predefinita 30 giorni sul tuo computer. Con macOS 26 o precedente, PixCuller mostra e ordina comunque le foto dell'iPhone, ma le elimini nell'app Foto dell'iPhone."),
         ("Posso eliminare le foto dal mio iPhone direttamente dal computer?",
-         "Sì. Con un iPhone, PixCuller elimina le foto direttamente tramite il cavo USB, da un Mac o da un PC Windows, senza limite giornaliero e senza nulla da acquistare. Tre condizioni: Foto di iCloud è disattivato sull'iPhone (quando è attivo, Apple non consente questa eliminazione), un Mac ha macOS 27 o successivo (va bene qualsiasi PC Windows 10/11) e accetti che l'eliminazione sia immediata e definitiva sull'iPhone: le foto non passano da «Eliminati di recente». Per impostazione predefinita, PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo computer, in una cartella «PixCuller Trash» dentro Immagini (una casella da spuntare al momento della conferma), così un errore si annulla importando di nuovo il file. Le Live Photo e le foto modificate sono gestite correttamente (tutte le loro versioni vengono eliminate insieme) e PixCuller mostra la versione modificata di una foto modificata. Se Foto di iCloud è attivo, disattivalo (Impostazioni > [il tuo nome] > iCloud > Foto) oppure elimina nell'app Foto dell'iPhone. Con macOS 26 o precedente, PixCuller può mostrare e ordinare le foto dell'iPhone ma non eliminarle: un banner nell'app lo segnala, e le elimini nell'app Foto dell'iPhone."),
+         "Sì. Con un iPhone, PixCuller elimina le foto direttamente tramite il cavo USB, da un Mac o da un PC Windows, senza nulla da acquistare. Tre condizioni: Foto di iCloud è disattivato sull'iPhone (quando è attivo, Apple non consente questa eliminazione), un Mac ha macOS 27 o successivo (va bene qualsiasi PC Windows 10/11) e accetti che l'eliminazione sia immediata e definitiva sull'iPhone: le foto non passano da «Eliminati di recente». Per impostazione predefinita, PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo computer, in una cartella «PixCuller Trash» dentro Immagini (una casella da spuntare al momento della conferma), così un errore si annulla importando di nuovo il file. Le Live Photo e le foto modificate sono gestite correttamente (tutte le loro versioni vengono eliminate insieme) e PixCuller mostra la versione modificata di una foto modificata. Se Foto di iCloud è attivo, disattivalo (Impostazioni > [il tuo nome] > iCloud > Foto) oppure elimina nell'app Foto dell'iPhone. Con macOS 26 o precedente, PixCuller può mostrare e ordinare le foto dell'iPhone ma non eliminarle: un banner nell'app lo segnala, e le elimini nell'app Foto dell'iPhone."),
         ("Eliminare da PixCuller è definitivo?",
          "Su un telefono, sì. Con un iPhone o un telefono Android, l'eliminazione tramite il cavo USB è immediata e definitiva sul telefono: le foto non passano da «Eliminati di recente» né dal cestino del telefono. Per impostazione predefinita, PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo computer, in una cartella «PixCuller Trash» dentro Immagini (una casella da spuntare al momento della conferma), per poterlo importare di nuovo. In una cartella del tuo computer, i file vanno nel Cestino."),
         ("Come collego il mio iPhone a PixCuller?",
@@ -51,7 +51,7 @@ FAQ_PIXCULLER = dict(
         ("Come trovo le foto duplicate in una cartella del Mac o del PC?",
          "Apri la cartella in PixCuller («Apri cartella», oppure trascinala sulla finestra). L'app esplora le sottocartelle, confronta il contenuto delle foto e applica lo stesso badge «≈ N» a copie esatte, raffiche e scatti quasi identici. Tieni il migliore di ogni gruppo e sposta il resto nel Cestino. Guide: <a href=\"{post:find-duplicate-photos-on-mac}\">sul Mac</a>, <a href=\"{post:find-duplicate-photos-on-windows}\">su Windows</a>."),
         ("Posso usare PixCuller su foto salvate sul mio computer, non su un iPhone?",
-         "Sì. Apri una cartella qualsiasi: PixCuller trova le foto simili al suo interno, mostra i badge su quelle simili e ti permette di confrontare ed eliminare senza limite giornaliero."),
+         "Sì. Apri una cartella qualsiasi: PixCuller trova le foto simili al suo interno, mostra i badge su quelle simili e ti permette di confrontare ed eliminare."),
         ("Come trova PixCuller le foto simili?",
          "Confronta il contenuto delle tue foto, non i nomi dei file, quindi raffiche, scatti quasi identici e la stessa scena fotografata più volte finiscono nello stesso gruppo. Puoi confrontare fino a 6 foto fianco a fianco e tenere la più nitida e meglio inquadrata."),
         ("Come confronto le foto simili fianco a fianco?",
@@ -61,7 +61,7 @@ FAQ_PIXCULLER = dict(
         ("Quali Mac supporta PixCuller?",
          "Mac con Apple Silicon e macOS 11 o successivo. L'app è firmata e notarizzata da Apple, quindi si apre senza avvisi di sicurezza."),
         ("PixCuller è gratuito? C'è un abbonamento?",
-         "Sì, PixCuller è gratuito, senza abbonamento e senza acquisti in-app. Sfogliare, confrontare, ordinare ed eliminare è gratuito, senza limite giornaliero, su un telefono come in una cartella del tuo computer."),
+         "Sì, PixCuller è gratuito, senza abbonamento e senza acquisti in-app. Sfogliare, confrontare, ordinare ed eliminare è gratuito, su un telefono come in una cartella del tuo computer."),
         ("PixCuller invia le mie foto a un server o al cloud?",
          "No. PixCuller funziona 100% sul dispositivo: nessun account, nessun cloud, nessuna foto, video o posizione viene mai inviata altrove. Il riconoscimento dei luoghi e il rilevamento delle foto simili avvengono sul tuo computer. Possono essere inviate solo statistiche d'uso anonime, disattivabili."),
         ("PixCuller modifica le mie foto originali?",
@@ -104,7 +104,7 @@ dict(slug="sort-iphone-photos-on-mac",
         <li>Tutto resta sul tuo Mac e sul tuo iPhone: nessun account, nessun cloud, nessun invio.</li>
         <li>PixCuller non modifica mai gli originali ed elimina solo ciò che confermi.</li>
         <li>Con macOS 26 o precedente, PixCuller mostra e ordina le foto dell'iPhone ma non può eliminarle: un banner nell'app lo segnala, e le elimini nell'app Foto dell'iPhone.</li>
-        <li>PixCuller è gratuito, senza limite giornaliero, e ordinare una cartella di foto sul Mac funziona allo stesso modo.</li>
+        <li>PixCuller è gratuito, e ordinare una cartella di foto sul Mac funziona allo stesso modo.</li>
       </ul>"""),
 dict(slug="sort-iphone-photos-on-pc",
      title="Come ordinare le foto dell'iPhone su un PC Windows",
@@ -123,7 +123,7 @@ dict(slug="sort-iphone-photos-on-pc",
       <p><strong>2. Installa PixCuller.</strong> Dal Microsoft Store oppure <a href="{win}">scaricandolo gratis</a> (Windows 10/11, 64 bit). Il download non è ancora firmato, quindi SmartScreen può mostrare un avviso al primo avvio.</p>
       <p><strong>3. Collega l'iPhone.</strong> Collegalo con un cavo USB, sbloccalo e tocca Autorizza.</p>
       <p><strong>4. Ordina un viaggio alla volta.</strong> La vista Viaggi raggruppa il rullino per data e luogo e mostra lo spazio occupato da ogni viaggio. Inizia dal più pesante.</p>
-      <p><strong>5. Confronta, seleziona, elimina.</strong> Le foto simili hanno un badge: confrontane fino a sei fianco a fianco, tieni la migliore e seleziona le altre. Con Foto di iCloud disattivato, PixCuller le elimina direttamente tramite il cavo USB, senza limite giornaliero. L'eliminazione è definitiva sull'iPhone (niente «Eliminati di recente»), ma per impostazione predefinita PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo PC, in una cartella «PixCuller Trash» dentro Immagini. Se Foto di iCloud è attivo, disattivalo (Impostazioni > [il tuo nome] > iCloud > Foto) oppure elimina nell'app Foto dell'iPhone.</p>
+      <p><strong>5. Confronta, seleziona, elimina.</strong> Le foto simili hanno un badge: confrontane fino a sei fianco a fianco, tieni la migliore e seleziona le altre. Con Foto di iCloud disattivato, PixCuller le elimina direttamente tramite il cavo USB. L'eliminazione è definitiva sull'iPhone (niente «Eliminati di recente»), ma per impostazione predefinita PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo PC, in una cartella «PixCuller Trash» dentro Immagini. Se Foto di iCloud è attivo, disattivalo (Impostazioni > [il tuo nome] > iCloud > Foto) oppure elimina nell'app Foto dell'iPhone.</p>
 
       <h2>Da sapere</h2>
       <ul>
@@ -184,8 +184,6 @@ dict(slug="free-up-iphone-from-mac-or-pc",
       <h2>È sicuro?</h2>
       <p>Sì: le tue foto restano sui tuoi dispositivi, senza account, senza cloud e senza upload. PixCuller si limita a leggere le tue foto finché non confermi. Un'eliminazione è definitiva sull'iPhone, ma una copia resta per impostazione predefinita 30 giorni sul tuo computer.</p>
 
-      <h2>Quante foto posso eliminare al giorno?</h2>
-      <p>Quante ne vuoi: non c'è limite giornaliero e non c'è nulla da acquistare. PixCuller è gratuito, senza abbonamento.</p>
 
       <h2>Su Windows</h2>
       <p>I passaggi sono gli stessi su Windows 10 e 11. Installa prima la app gratuita Apple Devices dal Microsoft Store, così PixCuller può leggere l'iPhone. L'app non è ancora firmata digitalmente, quindi SmartScreen può mostrare un avviso al primo avvio.</p>"""),
@@ -316,7 +314,7 @@ dict(slug="sort-android-photos-on-mac",
       <ul>
         <li>Tutto resta sul tuo Mac e sul tuo telefono: nessun account, nessun cloud, nessun invio.</li>
         <li>PixCuller non modifica mai gli originali ed elimina solo ciò che confermi.</li>
-        <li>PixCuller è gratuito, senza limite giornaliero.</li>
+        <li>PixCuller è gratuito, senza abbonamento.</li>
         <li>Hai anche un iPhone? Anche lui si collega al Mac con un cavo USB.</li>
       </ul>"""),
 dict(slug="sort-android-photos-on-pc",
@@ -343,7 +341,7 @@ dict(slug="sort-android-photos-on-pc",
       <ul>
         <li>Tutto resta sul tuo PC e sul tuo telefono: nessun account, nessun cloud, nessun invio.</li>
         <li>Eliminare da Esplora file è definitivo e non conserva alcuna copia; PixCuller conserva per impostazione predefinita la copia di 30 giorni sul PC.</li>
-        <li>PixCuller è gratuito, senza limite giornaliero, e ordinare una cartella sul PC funziona allo stesso modo.</li>
+        <li>PixCuller è gratuito, e ordinare una cartella sul PC funziona allo stesso modo.</li>
       </ul>"""),
 dict(slug="free-up-android-from-mac-or-pc",
      title="Come liberare spazio su Android da un Mac o PC Windows",
@@ -367,7 +365,7 @@ dict(slug="free-up-android-from-mac-or-pc",
       <h2>Da sapere</h2>
       <ul>
         <li>Nessun account e nessun invio: telefono e computer comunicano tramite il cavo USB.</li>
-        <li>PixCuller è gratuito, senza limite giornaliero.</li>
+        <li>PixCuller è gratuito, senza abbonamento.</li>
       </ul>"""),
 ],
 }

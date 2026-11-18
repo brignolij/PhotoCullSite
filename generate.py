@@ -151,151 +151,156 @@ def brand_html(lang):
 DESKTOP = {
 "en": dict(
     title="PixCuller — sort iPhone and Android photos on Mac or PC",
-    desc="Sort your iPhone or Android photos from a Mac or Windows PC: grouped by trip, similar shots side by side, bulk delete. Free, 100% on-device.",
-    nav_features="Features", nav_privacy="Privacy",
-    badge="🖥️ Desktop app (macOS · Windows)",
-    h1="Sort thousands of iPhone and Android photos on your Mac or PC",
-    subtitle="PixCuller is a full desktop application: it shows your entire iPhone or Android camera roll grouped by trip, compares your photos side by side, and bulk-deletes what's no longer worth keeping — right from your Mac or PC.",
-    cta_download="💻 Download for Mac", cta_download_windows="🪟 Download for Windows", cta_ms_store="🛍️ Get it from the Microsoft Store",
-    features_h2="What the app does",
+    desc="Sort your iPhone or Android photos from a Mac or Windows PC: similar shots side by side, hundreds of photos deleted in a few clicks. Free, 100% on-device.",
+    nav_features="Why PixCuller", nav_privacy="Privacy",
+    h1="Sort your iPhone from your Mac or PC.",
+    subtitle="Plug in the cable. PixCuller finds duplicates and bursts, shows similar photos side by side, and lets you delete hundreds of photos in a few clicks. Works with Android too.",
+    trust="Free · No account · Your photos never leave your computer",
+    cta_download="💻 Download for Mac", cta_download_windows="🪟 Download for Windows", dl_store="Microsoft Store (recommended)", dl_zip="Download the .zip",
+    steps_h2="How it works",
+    steps=[
+        ("🔌", "Plug in", "Connect your iPhone or Android phone with a USB cable. Nothing to install on the phone, no cloud, no account."),
+        ("🔍", "Compare", "Similar photos, duplicates and bursts are spotted for you. Show up to six side by side and keep the best one."),
+        ("🗑️", "Delete", "Mark what you no longer want and delete hundreds at once, directly on the phone."),
+    ],
+    features_h2="Why PixCuller",
     features=[
-        ("🧳", 'The "Trips" view', "Your entire photo library automatically grouped by trip (time AND location) — spot at a glance which trips take up the most space."),
-        ("🔍", "Side-by-side comparison", "Show up to 6 similar photos at once to pick the best one — perfect for sorting through bursts and near-duplicates."),
-        ("🗑️", "Safe bulk deletion", "Mark hundreds of photos in a few clicks. On an iPhone or an Android phone, PixCuller deletes them directly over the USB cable and keeps a copy on your computer for 30 days by default; in a folder, they go to the Trash or Recycle Bin. Details and conditions below."),
-        ("⚖️", "The size that counts", "Sort and filter by single-day trip, by excluded place (home, work...), by size — filters built for speed."),
-        ("🔌", "Direct connection to your phone", "Plug in your iPhone or Android phone with a USB cable: PixCuller reads your camera roll directly, with no cloud and no server involved."),
-        ("🔒", "100% on-device", "No photo, no GPS location is ever sent anywhere. Place recognition runs entirely locally, with no account and no subscription."),
+        ("🛟", "A mistake can be undone", "By default, every deleted photo is kept for 30 days in a folder on your computer, so you can import it back."),
+        ("🔒", "Nothing leaves your computer", "No photo and no GPS location is sent anywhere. No account, no cloud."),
+        ("⚡", "Built for speed", "Tick, drag, Ctrl/⌘-click: select hundreds of photos in a few gestures."),
     ],
-    connect_h2="Connect your phone in a minute",
-    connect_intro="At first launch, PixCuller asks where your photos are and walks you through it.",
-    connect=[
-        ("📱", "iPhone, by USB", "Mac and Windows. Plug in the iPhone, unlock it and tap Trust, then click Connect iPhone. On Windows, install the free Apple Devices app first."),
-        ("🔌", "Android, by USB", "Windows, and Mac with macOS 27 or later. Unlock the phone, plug it in and choose File transfer in its USB notification, then click Android phone and Connect over USB. Nothing to install on the phone."),
-        ("📁", "A folder", "Any folder on your computer or on a drive: click Open folder or drop it onto the window. No phone needed, no daily limit."),
+    strip_h2="Delete from your computer",
+    strip_items=[
+        "<strong>iPhone:</strong> a USB cable is enough. Photos are deleted directly on the iPhone, without going to “Recently Deleted”. You need a Windows 10/11 PC or a Mac on macOS 27 or later, with iCloud Photos turned off on the iPhone.",
+        "<strong>Android:</strong> same principle, with nothing to install on the phone. Windows 10/11 PC or a Mac on macOS 27 or later.",
+        "<strong>Safety net:</strong> by default, PixCuller keeps a copy of every deleted photo for 30 days in “PixCuller Trash” (Pictures folder). In a folder on your computer, files go to the Trash or Recycle Bin.",
     ],
-    strip_h2="Deleting from your computer: iPhone and Android",
-    strip_p1="<strong>iPhone:</strong> PixCuller deletes the photos directly over the USB cable, with no daily limit and nothing to buy. It works on any Windows 10/11 PC and on a Mac with macOS 27 or later, with iCloud Photos turned off on the iPhone (when it is on, Apple does not allow this deletion: turn it off in Settings > [your name] > iCloud > Photos, or delete in the iPhone's Photos app). The deletion is immediate and permanent on the iPhone: the photos do not go to “Recently Deleted”. By default, PixCuller keeps a copy of each deleted item on your computer for 30 days, in a “PixCuller Trash” folder in Pictures, so a mistake can be undone by importing the file again. On macOS 26 or earlier, PixCuller shows and sorts the iPhone's photos but cannot delete them: a banner in the app says so, and you delete in the iPhone's Photos app.",
-    strip_p2="<strong>Android:</strong> PixCuller deletes the photos directly over the USB cable too, on any Windows 10/11 PC and on a Mac with macOS 27 or later, with nothing to install on the phone. The deletion is immediate and permanent (the photos do not go to the phone's trash), with the same 30-day copy on your computer. In folders on your Mac or PC, files go to the Trash or Recycle Bin.",
+    strip_link="Conditions and details in the FAQ",
+    also="Also: your photos grouped by trip, with the space each one takes.",
     footer_copy="© 2026 PixCuller. Developed by Jeffrey Brignoli.",
     footer_privacy="Privacy", footer_kofi="Ko-fi", footer_github="GitHub",
 ),
 "fr": dict(
     title="PixCuller — trier ses photos iPhone et Android sur Mac ou PC",
-    desc="Triez les photos de votre iPhone ou Android depuis un Mac ou un PC Windows : par séjour, photos similaires côte à côte, suppression en masse. Gratuit.",
-    nav_features="Fonctionnalités", nav_privacy="Confidentialité",
-    badge="🖥️ Application de bureau (macOS · Windows)",
-    h1="Triez des milliers de photos d'iPhone et d'Android sur Mac ou PC",
-    subtitle="PixCuller est une application de bureau à part entière : elle affiche tout le rouleau de votre iPhone ou de votre téléphone Android regroupé par séjour, compare vos photos côte à côte, et supprime en masse ce qui ne vaut plus la peine d'être gardé — directement depuis votre Mac ou votre PC.",
-    cta_download="💻 Télécharger pour Mac", cta_download_windows="🪟 Télécharger pour Windows", cta_ms_store="🛍️ Obtenir sur le Microsoft Store",
-    features_h2="Ce que fait l'app",
+    desc="Triez les photos de votre iPhone ou Android depuis un Mac ou un PC Windows : photos similaires côte à côte, des centaines supprimées en quelques clics. Gratuit.",
+    nav_features="Pourquoi PixCuller", nav_privacy="Confidentialité",
+    h1="Triez votre iPhone depuis votre Mac ou PC.",
+    subtitle="Branchez le câble. PixCuller repère les doublons et les rafales, vous montre les photos similaires côte à côte, et vous laisse supprimer des centaines de photos en quelques clics. Fonctionne aussi avec Android.",
+    trust="Gratuit · Sans compte · Vos photos ne quittent jamais votre ordinateur",
+    cta_download="💻 Télécharger pour Mac", cta_download_windows="🪟 Télécharger pour Windows", dl_store="Microsoft Store (recommandé)", dl_zip="Télécharger le .zip",
+    steps_h2="Comment ça marche",
+    steps=[
+        ("🔌", "Branchez", "Reliez votre iPhone ou votre téléphone Android par câble USB. Rien à installer sur le téléphone, ni cloud, ni compte."),
+        ("🔍", "Comparez", "Les photos similaires, les doublons et les rafales sont repérés pour vous. Affichez-en jusqu'à six côte à côte et gardez la meilleure."),
+        ("🗑️", "Supprimez", "Marquez ce dont vous ne voulez plus et supprimez des centaines de photos d'un coup, directement sur le téléphone."),
+    ],
+    features_h2="Pourquoi PixCuller",
     features=[
-        ("🧳", 'Vue "Voyages / séjours"', "Toute votre photothèque regroupée automatiquement par séjour (temps ET lieu) — pour repérer d'un coup d'œil les voyages qui prennent le plus de place."),
-        ("🔍", "Comparaison côte à côte", "Affichez jusqu'à 6 photos similaires en même temps pour choisir la meilleure — idéal pour trier les rafales et les quasi-doublons."),
-        ("🗑️", "Suppression en masse, en toute sécurité", "Marquez des centaines de photos en quelques clics. Sur un iPhone ou un téléphone Android, PixCuller les supprime directement par le câble USB et garde par défaut une copie sur votre ordinateur pendant 30 jours ; dans un dossier, elles vont à la Corbeille. Détails et conditions plus bas."),
-        ("⚖️", "Le poids qui compte", "Triez et filtrez par séjour d'1 jour, par lieu exclu (domicile, travail...), par poids — des filtres pensés pour aller vite."),
-        ("🔌", "Connexion directe au téléphone", "Branchez votre iPhone ou votre téléphone Android avec un câble USB : PixCuller lit votre rouleau directement, sans cloud ni serveur."),
-        ("🔒", "100 % sur l'appareil", "Aucune photo, aucune position GPS n'est jamais envoyée où que ce soit. La reconnaissance des lieux fonctionne entièrement en local, sans compte ni abonnement."),
+        ("🛟", "Une erreur se rattrape", "Par défaut, chaque photo supprimée est gardée 30 jours dans un dossier de votre ordinateur : vous pouvez la réimporter."),
+        ("🔒", "Rien ne quitte votre ordinateur", "Aucune photo ni position GPS n'est envoyée où que ce soit. Pas de compte, pas de cloud."),
+        ("⚡", "Pensé pour aller vite", "Cochez, glissez, Ctrl/⌘+clic : sélectionnez des centaines de photos en quelques gestes."),
     ],
-    connect_h2="Connectez votre téléphone en une minute",
-    connect_intro="Au premier lancement, PixCuller demande où sont vos photos et vous guide pas à pas.",
-    connect=[
-        ("📱", "iPhone, en USB", "Mac et Windows. Branchez l'iPhone, déverrouillez-le et touchez « Se fier », puis cliquez sur « Connecter l'iPhone ». Sous Windows, installez d'abord l'app gratuite Appareils Apple."),
-        ("🔌", "Android, en USB", "Windows, et Mac sous macOS 27 ou ultérieur. Déverrouillez le téléphone, branchez-le et choisissez « Transfert de fichiers » dans sa notification USB, puis cliquez sur « Téléphone Android » et « Connecter en USB ». Rien à installer sur le téléphone."),
-        ("📁", "Un dossier", "N'importe quel dossier de votre ordinateur ou d'un disque : cliquez sur « Ouvrir un dossier » ou glissez-le sur la fenêtre. Sans téléphone, sans limite quotidienne."),
+    strip_h2="Supprimez depuis votre ordinateur",
+    strip_items=[
+        "<strong>iPhone :</strong> un câble USB suffit. Les photos sont supprimées directement sur l'iPhone, sans passer par « Supprimés récemment ». Il faut un PC Windows 10/11 ou un Mac sous macOS 27 ou ultérieur, avec Photos iCloud désactivé sur l'iPhone.",
+        "<strong>Android :</strong> même principe, sans rien installer sur le téléphone. PC Windows 10/11 ou Mac sous macOS 27 ou ultérieur.",
+        "<strong>Filet de sécurité :</strong> par défaut, PixCuller garde 30 jours une copie de chaque photo supprimée dans « PixCuller Trash » (dossier Images). Dans un dossier de l'ordinateur, les fichiers vont à la Corbeille.",
     ],
-    strip_h2="Supprimer depuis l'ordinateur : iPhone et Android",
-    strip_p1="<strong>iPhone :</strong> PixCuller supprime les photos directement par le câble USB, sans limite quotidienne et sans rien à acheter. Cela fonctionne sur tout PC Windows 10/11 et sur un Mac sous macOS 27 ou ultérieur, avec Photos iCloud désactivé sur l'iPhone (quand il est activé, Apple n'autorise pas cette suppression : désactivez-le dans Réglages > [votre nom] > iCloud > Photos, ou supprimez dans l'app Photos de l'iPhone). La suppression est immédiate et définitive sur l'iPhone : les photos ne passent pas par « Supprimés récemment ». Par défaut, PixCuller garde pendant 30 jours une copie de chaque élément supprimé sur votre ordinateur, dans un dossier « PixCuller Trash » du dossier Images, de sorte qu'une erreur peut être annulée en réimportant le fichier. Sous macOS 26 ou antérieur, PixCuller affiche et trie les photos de l'iPhone mais ne peut pas les supprimer : un bandeau l'indique dans l'app, et vous supprimez dans l'app Photos de l'iPhone.",
-    strip_p2="<strong>Android :</strong> PixCuller supprime aussi les photos directement par le câble USB, sur tout PC Windows 10/11 et sur un Mac sous macOS 27 ou ultérieur, sans rien à installer sur le téléphone. La suppression est immédiate et définitive (les photos ne passent pas par la corbeille du téléphone), avec la même copie de 30 jours sur l'ordinateur. Dans les dossiers du Mac ou du PC, les fichiers vont à la Corbeille.",
+    strip_link="Conditions et détails dans la FAQ",
+    also="Et aussi : vos photos regroupées par voyage, avec la place que chacun occupe.",
     footer_copy="© 2026 PixCuller. Développé par Jeffrey Brignoli.",
     footer_privacy="Confidentialité", footer_kofi="Ko-fi", footer_github="GitHub",
 ),
 "it": dict(
     title="PixCuller — ordinare foto iPhone e Android su Mac o PC",
-    desc="Ordina le foto del tuo iPhone o Android da un Mac o PC Windows: per soggiorno, foto simili fianco a fianco, eliminazione in blocco. Gratis, 100% in locale.",
-    nav_features="Funzionalità", nav_privacy="Privacy",
-    badge="🖥️ App desktop (macOS · Windows)",
-    h1="Ordina migliaia di foto di iPhone e Android su Mac o PC",
-    subtitle="PixCuller è un'applicazione desktop a tutti gli effetti: mostra l'intero rullino del tuo iPhone o telefono Android raggruppato per soggiorno, confronta le tue foto affiancate ed elimina in blocco ciò che non vale più la pena tenere — direttamente dal tuo Mac o PC.",
-    cta_download="💻 Scarica per Mac", cta_download_windows="🪟 Scarica per Windows", cta_ms_store="🛍️ Scarica da Microsoft Store",
-    features_h2="Cosa fa l'app",
+    desc="Ordina le foto del tuo iPhone o Android da un Mac o PC Windows: foto simili affiancate, centinaia di foto eliminate in pochi clic. Gratis, 100% in locale.",
+    nav_features="Perché PixCuller", nav_privacy="Privacy",
+    h1="Ordina il tuo iPhone dal Mac o dal PC.",
+    subtitle="Collega il cavo. PixCuller trova doppioni e raffiche, mostra le foto simili affiancate e ti lascia eliminare centinaia di foto in pochi clic. Funziona anche con Android.",
+    trust="Gratis · Nessun account · Le tue foto non lasciano mai il tuo computer",
+    cta_download="💻 Scarica per Mac", cta_download_windows="🪟 Scarica per Windows", dl_store="Microsoft Store (consigliato)", dl_zip="Scarica lo .zip",
+    steps_h2="Come funziona",
+    steps=[
+        ("🔌", "Collega", "Collega l'iPhone o il telefono Android con un cavo USB. Niente da installare sul telefono, niente cloud, nessun account."),
+        ("🔍", "Confronta", "Foto simili, doppioni e raffiche vengono individuati per te. Mostrane fino a sei affiancate e tieni la migliore."),
+        ("🗑️", "Elimina", "Segna ciò che non vuoi più ed elimina centinaia di foto in un colpo solo, direttamente sul telefono."),
+    ],
+    features_h2="Perché PixCuller",
     features=[
-        ("🧳", 'Vista "Viaggi / soggiorni"', "Tutta la tua libreria foto raggruppata automaticamente per soggiorno (tempo E luogo) — per individuare a colpo d'occhio i viaggi che occupano più spazio."),
-        ("🔍", "Confronto affiancato", "Mostra fino a 6 foto simili contemporaneamente per scegliere la migliore — ideale per ordinare raffiche e quasi-duplicati."),
-        ("🗑️", "Eliminazione in blocco, in tutta sicurezza", "Contrassegna centinaia di foto in pochi clic. Su un iPhone o un telefono Android, PixCuller le elimina direttamente tramite il cavo USB e conserva per impostazione predefinita una copia sul computer per 30 giorni; in una cartella, finiscono nel Cestino. Dettagli e condizioni più sotto."),
-        ("⚖️", "La dimensione che conta", "Ordina e filtra per soggiorno di 1 giorno, per luogo escluso (casa, lavoro...), per dimensione — filtri pensati per la velocità."),
-        ("🔌", "Connessione diretta al telefono", "Collega l'iPhone o il telefono Android con un cavo USB: PixCuller legge il rullino direttamente, senza cloud né server."),
-        ("🔒", "100% sul dispositivo", "Nessuna foto, nessuna posizione GPS viene mai inviata altrove. Il riconoscimento dei luoghi funziona interamente in locale, senza account né abbonamento."),
+        ("🛟", "Un errore si rimedia", "Per impostazione predefinita, ogni foto eliminata resta 30 giorni in una cartella del tuo computer: puoi reimportarla."),
+        ("🔒", "Niente lascia il tuo computer", "Nessuna foto né posizione GPS viene inviata altrove. Nessun account, nessun cloud."),
+        ("⚡", "Pensato per la velocità", "Spunta, trascina, Ctrl/⌘+clic: seleziona centinaia di foto con pochi gesti."),
     ],
-    connect_h2="Collega il telefono in un minuto",
-    connect_intro="Al primo avvio PixCuller chiede dove sono le tue foto e ti guida passo passo.",
-    connect=[
-        ("📱", "iPhone, via USB", "Mac e Windows. Collega l'iPhone, sbloccalo e tocca «Autorizza», poi fai clic su «Connetti l'iPhone». Su Windows installa prima l'app gratuita Dispositivi Apple."),
-        ("🔌", "Android, via USB", "Windows, e Mac con macOS 27 o successivo. Sblocca il telefono, collegalo e scegli «Trasferimento file» nella notifica USB, poi fai clic su «Telefono Android» e «Collega via USB». Niente da installare sul telefono."),
-        ("📁", "Una cartella", "Qualsiasi cartella del computer o di un disco: fai clic su «Apri cartella» o trascinala sulla finestra. Nessun telefono, nessun limite giornaliero."),
+    strip_h2="Elimina dal computer",
+    strip_items=[
+        "<strong>iPhone:</strong> basta un cavo USB. Le foto vengono eliminate direttamente sull'iPhone, senza passare da «Eliminati di recente». Serve un PC Windows 10/11 o un Mac con macOS 27 o successivo, con Foto di iCloud disattivato sull'iPhone.",
+        "<strong>Android:</strong> stesso principio, senza nulla da installare sul telefono. PC Windows 10/11 o Mac con macOS 27 o successivo.",
+        "<strong>Rete di sicurezza:</strong> per impostazione predefinita PixCuller conserva per 30 giorni una copia di ogni foto eliminata in «PixCuller Trash» (cartella Immagini). In una cartella del computer, i file vanno nel Cestino.",
     ],
-    strip_h2="Eliminare dal computer: iPhone e Android",
-    strip_p1="<strong>iPhone:</strong> PixCuller elimina le foto direttamente tramite il cavo USB, senza limite giornaliero e senza nulla da acquistare. Funziona su qualsiasi PC Windows 10/11 e su un Mac con macOS 27 o successivo, con Foto di iCloud disattivato sull'iPhone (quando è attivo, Apple non consente questa eliminazione: disattivalo in Impostazioni > [il tuo nome] > iCloud > Foto, oppure elimina nell'app Foto dell'iPhone). L'eliminazione è immediata e definitiva sull'iPhone: le foto non passano da «Eliminati di recente». Per impostazione predefinita, PixCuller conserva per 30 giorni una copia di ogni elemento eliminato sul tuo computer, in una cartella «PixCuller Trash» dentro Immagini, così un errore si annulla importando di nuovo il file. Con macOS 26 o precedente, PixCuller mostra e ordina le foto dell'iPhone ma non può eliminarle: un banner nell'app lo indica, e le elimini nell'app Foto dell'iPhone.",
-    strip_p2="<strong>Android:</strong> anche qui PixCuller elimina le foto direttamente tramite il cavo USB, su qualsiasi PC Windows 10/11 e su un Mac con macOS 27 o successivo, senza nulla da installare sul telefono. L'eliminazione è immediata e definitiva (le foto non passano dal cestino del telefono), con la stessa copia di 30 giorni sul computer. Nelle cartelle del Mac o del PC, i file vanno nel Cestino.",
+    strip_link="Condizioni e dettagli nelle FAQ",
+    also="Inoltre: le tue foto raggruppate per soggiorno, con lo spazio occupato da ciascuno.",
     footer_copy="© 2026 PixCuller. Sviluppato da Jeffrey Brignoli.",
     footer_privacy="Privacy", footer_kofi="Ko-fi", footer_github="GitHub",
 ),
 "de": dict(
     title="PixCuller — iPhone- & Android-Fotos am Mac oder PC sortieren",
-    desc="Sortiere deine iPhone- oder Android-Fotos am Mac oder Windows-PC: nach Reise gruppiert, ähnliche Fotos nebeneinander, Massenlöschung. Kostenlos, 100 % lokal.",
-    nav_features="Funktionen", nav_privacy="Datenschutz",
-    badge="🖥️ Desktop-App (macOS · Windows)",
-    h1="Tausende iPhone- und Android-Fotos am Mac oder PC sortieren",
-    subtitle="PixCuller ist eine vollwertige Desktop-Anwendung: Sie zeigt die gesamte Fotorolle deines iPhones oder Android-Telefons nach Aufenthalt gruppiert, vergleicht deine Fotos nebeneinander und löscht in großen Mengen, was sich nicht mehr zu behalten lohnt — direkt von deinem Mac oder PC aus.",
-    cta_download="💻 Für Mac herunterladen", cta_download_windows="🪟 Für Windows herunterladen", cta_ms_store="🛍️ Im Microsoft Store holen",
-    features_h2="Was die App kann",
+    desc="Sortiere iPhone- und Android-Fotos am Mac oder Windows-PC: ähnliche Fotos nebeneinander, Hunderte mit wenigen Klicks löschen. Kostenlos, 100 % lokal.",
+    nav_features="Warum PixCuller", nav_privacy="Datenschutz",
+    h1="Sortiere dein iPhone am Mac oder PC.",
+    subtitle="Kabel anschließen. PixCuller findet Duplikate und Serienbilder, zeigt ähnliche Fotos nebeneinander und lässt dich Hunderte Fotos mit wenigen Klicks löschen. Funktioniert auch mit Android.",
+    trust="Kostenlos · Kein Konto · Deine Fotos verlassen nie deinen Computer",
+    cta_download="💻 Für Mac herunterladen", cta_download_windows="🪟 Für Windows herunterladen", dl_store="Microsoft Store (empfohlen)", dl_zip=".zip herunterladen",
+    steps_h2="So funktioniert's",
+    steps=[
+        ("🔌", "Anschließen", "Verbinde dein iPhone oder Android-Telefon per USB-Kabel. Auf dem Telefon muss nichts installiert werden, keine Cloud, kein Konto."),
+        ("🔍", "Vergleichen", "Ähnliche Fotos, Duplikate und Serienbilder werden für dich erkannt. Zeige bis zu sechs nebeneinander an und behalte das beste."),
+        ("🗑️", "Löschen", "Markiere, was du nicht mehr willst, und lösche Hunderte Fotos auf einmal, direkt auf dem Telefon."),
+    ],
+    features_h2="Warum PixCuller",
     features=[
-        ("🧳", 'Ansicht "Reisen / Aufenthalte"', "Deine gesamte Fotobibliothek automatisch nach Aufenthalt gruppiert (Zeit UND Ort) — erkenne auf einen Blick, welche Reisen am meisten Platz beanspruchen."),
-        ("🔍", "Seite-an-Seite-Vergleich", "Zeige bis zu 6 ähnliche Fotos gleichzeitig an, um das beste auszuwählen — ideal zum Sortieren von Serienbildern und Beinahe-Duplikaten."),
-        ("🗑️", "Sicheres Löschen in großen Mengen", "Markiere Hunderte von Fotos in wenigen Klicks. Bei einem iPhone oder Android-Telefon löscht PixCuller sie direkt über das USB-Kabel und bewahrt standardmäßig 30 Tage lang eine Kopie auf deinem Computer auf; in einem Ordner landen sie im Papierkorb. Details und Bedingungen weiter unten."),
-        ("⚖️", "Die Größe, die zählt", "Sortiere und filtere nach eintägigem Aufenthalt, nach ausgeschlossenem Ort (Zuhause, Arbeit...), nach Größe — Filter, die auf Geschwindigkeit ausgelegt sind."),
-        ("🔌", "Direkte Verbindung zum Telefon", "Schließe dein iPhone oder Android-Telefon per USB-Kabel an: PixCuller liest deine Fotorolle direkt, ganz ohne Cloud und ohne Server."),
-        ("🔒", "100 % auf dem Gerät", "Kein Foto, kein GPS-Standort wird jemals irgendwohin gesendet. Die Ortserkennung läuft vollständig lokal, ohne Konto und ohne Abo."),
+        ("🛟", "Ein Fehler lässt sich rückgängig machen", "Standardmäßig bleibt jedes gelöschte Foto 30 Tage in einem Ordner auf deinem Computer, du kannst es wieder importieren."),
+        ("🔒", "Nichts verlässt deinen Computer", "Kein Foto und kein GPS-Standort wird irgendwohin gesendet. Kein Konto, keine Cloud."),
+        ("⚡", "Auf Tempo ausgelegt", "Anhaken, ziehen, Strg/⌘-Klick: Hunderte Fotos mit wenigen Handgriffen auswählen."),
     ],
-    connect_h2="Telefon in einer Minute verbinden",
-    connect_intro="Beim ersten Start fragt PixCuller, wo deine Fotos sind, und führt dich Schritt für Schritt.",
-    connect=[
-        ("📱", "iPhone, per USB", "Mac und Windows. Schließe das iPhone an, entsperre es und tippe auf „Vertrauen“, dann klicke auf „iPhone verbinden“. Unter Windows zuerst die kostenlose App Apple-Geräte installieren."),
-        ("🔌", "Android, per USB", "Windows, und Mac mit macOS 27 oder neuer. Entsperre das Telefon, schließe es an und wähle „Dateiübertragung“ in der USB-Benachrichtigung, dann klicke auf „Android-Telefon“ und „Per USB verbinden“. Auf dem Telefon muss nichts installiert werden."),
-        ("📁", "Ein Ordner", "Jeder Ordner auf deinem Computer oder einem Laufwerk: Klicke auf „Ordner öffnen“ oder ziehe ihn auf das Fenster. Kein Telefon nötig, kein Tageslimit."),
+    strip_h2="Vom Computer aus löschen",
+    strip_items=[
+        "<strong>iPhone:</strong> Ein USB-Kabel genügt. Die Fotos werden direkt auf dem iPhone gelöscht, ohne über „Zuletzt gelöscht“ zu laufen. Nötig sind ein Windows-10/11-PC oder ein Mac mit macOS 27 oder neuer und ausgeschaltete iCloud-Fotos auf dem iPhone.",
+        "<strong>Android:</strong> Gleiches Prinzip, ohne etwas auf dem Telefon zu installieren. Windows-10/11-PC oder Mac mit macOS 27 oder neuer.",
+        "<strong>Sicherheitsnetz:</strong> Standardmäßig bewahrt PixCuller 30 Tage lang eine Kopie jedes gelöschten Fotos in „PixCuller Trash“ (Ordner Bilder) auf. In einem Ordner auf dem Computer landen die Dateien im Papierkorb.",
     ],
-    strip_h2="Vom Computer aus löschen: iPhone und Android",
-    strip_p1="<strong>iPhone:</strong> PixCuller löscht die Fotos direkt über das USB-Kabel, ohne Tageslimit und ohne etwas zu kaufen. Das funktioniert auf jedem Windows-10/11-PC und auf einem Mac mit macOS 27 oder neuer, wenn iCloud-Fotos auf dem iPhone ausgeschaltet ist (ist es eingeschaltet, erlaubt Apple dieses Löschen nicht: Schalte es unter Einstellungen > [dein Name] > iCloud > Fotos aus oder lösche in der Fotos-App des iPhones). Das Löschen ist auf dem iPhone sofort und endgültig: Die Fotos landen nicht in „Zuletzt gelöscht“. Standardmäßig bewahrt PixCuller 30 Tage lang eine Kopie jedes gelöschten Elements auf deinem Computer auf, in einem Ordner „PixCuller Trash“ im Ordner Bilder, sodass sich ein Fehler durch erneutes Importieren der Datei rückgängig machen lässt. Unter macOS 26 oder älter zeigt und sortiert PixCuller die Fotos des iPhones, kann sie aber nicht löschen: Ein Banner in der App weist darauf hin, und du löschst in der Fotos-App des iPhones.",
-    strip_p2="<strong>Android:</strong> Auch hier löscht PixCuller die Fotos direkt über das USB-Kabel, auf jedem Windows-10/11-PC und auf einem Mac mit macOS 27 oder neuer, ohne etwas auf dem Telefon zu installieren. Das Löschen ist sofort und endgültig (die Fotos landen nicht im Papierkorb des Telefons), mit derselben 30-Tage-Kopie auf dem Computer. In Ordnern auf deinem Mac oder PC landen die Dateien im Papierkorb.",
+    strip_link="Bedingungen und Details in den FAQ",
+    also="Außerdem: deine Fotos nach Reisen gruppiert, mit dem Platz, den jede belegt.",
     footer_copy="© 2026 PixCuller. Entwickelt von Jeffrey Brignoli.",
     footer_privacy="Datenschutz", footer_kofi="Ko-fi", footer_github="GitHub",
 ),
 "es": dict(
     title="PixCuller — ordenar fotos de iPhone y Android en Mac o PC",
-    desc="Ordena las fotos de tu iPhone o Android desde un Mac o PC con Windows: por viaje, fotos parecidas lado a lado, borrado en masa. Gratis, 100 % local.",
-    nav_features="Funciones", nav_privacy="Privacidad",
-    badge="🖥️ Aplicación de escritorio (macOS · Windows)",
-    h1="Ordena miles de fotos de iPhone y Android en tu Mac o PC",
-    subtitle="PixCuller es una aplicación de escritorio completa: muestra todo el carrete de tu iPhone o teléfono Android agrupado por estancia, compara tus fotos una junto a otra y elimina en masa lo que ya no vale la pena conservar — directamente desde tu Mac o PC.",
-    cta_download="💻 Descargar para Mac", cta_download_windows="🪟 Descargar para Windows", cta_ms_store="🛍️ Obtener en Microsoft Store",
-    features_h2="Qué hace la app",
+    desc="Ordena las fotos de tu iPhone o Android desde un Mac o PC con Windows: fotos parecidas lado a lado, cientos borradas en pocos clics. Gratis, 100 % local.",
+    nav_features="Por qué PixCuller", nav_privacy="Privacidad",
+    h1="Ordena tu iPhone desde tu Mac o PC.",
+    subtitle="Conecta el cable. PixCuller encuentra duplicados y ráfagas, muestra las fotos parecidas una junto a otra y te deja borrar cientos de fotos en pocos clics. También funciona con Android.",
+    trust="Gratis · Sin cuenta · Tus fotos nunca salen de tu ordenador",
+    cta_download="💻 Descargar para Mac", cta_download_windows="🪟 Descargar para Windows", dl_store="Microsoft Store (recomendado)", dl_zip="Descargar el .zip",
+    steps_h2="Cómo funciona",
+    steps=[
+        ("🔌", "Conecta", "Conecta tu iPhone o teléfono Android con un cable USB. Nada que instalar en el teléfono, sin nube, sin cuenta."),
+        ("🔍", "Compara", "Las fotos parecidas, los duplicados y las ráfagas se detectan por ti. Muestra hasta seis una junto a otra y quédate con la mejor."),
+        ("🗑️", "Borra", "Marca lo que ya no quieres y borra cientos de fotos de una vez, directamente en el teléfono."),
+    ],
+    features_h2="Por qué PixCuller",
     features=[
-        ("🧳", 'Vista "Viajes / estancias"', "Toda tu biblioteca de fotos agrupada automáticamente por estancia (tiempo Y lugar) — detecta de un vistazo los viajes que ocupan más espacio."),
-        ("🔍", "Comparación lado a lado", "Muestra hasta 6 fotos similares a la vez para elegir la mejor — ideal para ordenar ráfagas y casi duplicados."),
-        ("🗑️", "Eliminación en masa, con total seguridad", "Marca cientos de fotos en pocos clics. En un iPhone o un teléfono Android, PixCuller las elimina directamente por el cable USB y guarda por defecto una copia en tu ordenador durante 30 días; en una carpeta, van a la Papelera. Detalles y condiciones más abajo."),
-        ("⚖️", "El tamaño que importa", "Ordena y filtra por estancia de 1 día, por lugar excluido (casa, trabajo...), por tamaño — filtros pensados para ir rápido."),
-        ("🔌", "Conexión directa con el teléfono", "Conecta tu iPhone o tu teléfono Android con un cable USB: PixCuller lee tu carrete directamente, sin nube ni servidor."),
-        ("🔒", "100 % en el dispositivo", "Ninguna foto ni ubicación GPS se envía nunca a ningún sitio. El reconocimiento de lugares funciona completamente en local, sin cuenta ni suscripción."),
+        ("🛟", "Un error se puede deshacer", "Por defecto, cada foto borrada se guarda 30 días en una carpeta de tu ordenador y puedes importarla de nuevo."),
+        ("🔒", "Nada sale de tu ordenador", "Ninguna foto ni ubicación GPS se envía a ningún sitio. Sin cuenta, sin nube."),
+        ("⚡", "Pensado para ir rápido", "Marca, arrastra, Ctrl/⌘+clic: selecciona cientos de fotos con unos pocos gestos."),
     ],
-    connect_h2="Conecta tu teléfono en un minuto",
-    connect_intro="En el primer inicio, PixCuller pregunta dónde están tus fotos y te guía paso a paso.",
-    connect=[
-        ("📱", "iPhone, por USB", "Mac y Windows. Conecta el iPhone, desbloquéalo y toca «Confiar», luego haz clic en «Conectar el iPhone». En Windows, instala antes la app gratuita Dispositivos Apple."),
-        ("🔌", "Android, por USB", "Windows, y Mac con macOS 27 o posterior. Desbloquea el teléfono, conéctalo y elige «Transferencia de archivos» en su notificación USB, luego haz clic en «Teléfono Android» y «Conectar por USB». Nada que instalar en el teléfono."),
-        ("📁", "Una carpeta", "Cualquier carpeta de tu ordenador o de un disco: haz clic en «Abrir carpeta» o arrástrala a la ventana. Sin teléfono, sin límite diario."),
+    strip_h2="Borra desde el ordenador",
+    strip_items=[
+        "<strong>iPhone:</strong> basta un cable USB. Las fotos se borran directamente en el iPhone, sin pasar por « Eliminados recientemente ». Hace falta un PC con Windows 10/11 o un Mac con macOS 27 o posterior, con Fotos en iCloud desactivado en el iPhone.",
+        "<strong>Android:</strong> mismo principio, sin nada que instalar en el teléfono. PC con Windows 10/11 o Mac con macOS 27 o posterior.",
+        "<strong>Red de seguridad:</strong> por defecto, PixCuller guarda 30 días una copia de cada foto borrada en « PixCuller Trash » (carpeta Imágenes). En una carpeta del ordenador, los archivos van a la Papelera.",
     ],
-    strip_h2="Eliminar desde el ordenador: iPhone y Android",
-    strip_p1="<strong>iPhone:</strong> PixCuller elimina las fotos directamente por el cable USB, sin límite diario y sin nada que comprar. Funciona en cualquier PC con Windows 10/11 y en un Mac con macOS 27 o posterior, con Fotos en iCloud desactivado en el iPhone (cuando está activado, Apple no permite esta eliminación: desactívalo en Ajustes > [tu nombre] > iCloud > Fotos, o elimina en la app Fotos del iPhone). La eliminación es inmediata y definitiva en el iPhone: las fotos no pasan por « Eliminados recientemente ». Por defecto, PixCuller guarda durante 30 días una copia de cada elemento eliminado en tu ordenador, en una carpeta « PixCuller Trash » dentro de Imágenes, de modo que un error se puede deshacer importando de nuevo el archivo. Con macOS 26 o anterior, PixCuller muestra y ordena las fotos del iPhone pero no puede eliminarlas: un aviso en la app lo indica, y las eliminas en la app Fotos del iPhone.",
-    strip_p2="<strong>Android:</strong> PixCuller también elimina las fotos directamente por el cable USB, en cualquier PC con Windows 10/11 y en un Mac con macOS 27 o posterior, sin nada que instalar en el teléfono. La eliminación es inmediata y definitiva (las fotos no pasan por la papelera del teléfono), con la misma copia de 30 días en el ordenador. En las carpetas del Mac o del PC, los archivos van a la Papelera.",
+    strip_link="Condiciones y detalles en las FAQ",
+    also="Además: tus fotos agrupadas por viaje, con el espacio que ocupa cada uno.",
     footer_copy="© 2026 PixCuller. Desarrollado por Jeffrey Brignoli.",
     footer_privacy="Privacidad", footer_kofi="Ko-fi", footer_github="GitHub",
 ),
@@ -556,7 +561,7 @@ PRICING = {
     h2="Free, really",
     intro="No subscription, no in-app purchase, no account.",
     plans=[
-        ("PixCuller", "$0", "Browse, compare, sort and delete, on an iPhone, an Android phone or a folder, with no daily limit. Mac and Windows."),
+        ("PixCuller", "$0", "Browse, compare, sort and delete, on an iPhone, an Android phone or a folder. Mac and Windows."),
     ],
     note="PixCuller works on its own: there is no other app to buy or install.",
 ),
@@ -564,7 +569,7 @@ PRICING = {
     h2="Gratuit, vraiment",
     intro="Ni abonnement, ni achat intégré, ni compte.",
     plans=[
-        ("PixCuller", "0 $", "Parcourez, comparez, triez et supprimez, sur un iPhone, un téléphone Android ou un dossier, sans limite quotidienne. Mac et Windows."),
+        ("PixCuller", "0 $", "Parcourez, comparez, triez et supprimez, sur un iPhone, un téléphone Android ou un dossier. Mac et Windows."),
     ],
     note="PixCuller fonctionne seul : aucune autre app à acheter ni à installer.",
 ),
@@ -572,7 +577,7 @@ PRICING = {
     h2="Gratis, davvero",
     intro="Nessun abbonamento, nessun acquisto in-app, nessun account.",
     plans=[
-        ("PixCuller", "0 $", "Sfoglia, confronta, ordina ed elimina, su un iPhone, un telefono Android o una cartella, senza limite giornaliero. Mac e Windows."),
+        ("PixCuller", "0 $", "Sfoglia, confronta, ordina ed elimina, su un iPhone, un telefono Android o una cartella. Mac e Windows."),
     ],
     note="PixCuller funziona da solo: nessun'altra app da acquistare o installare.",
 ),
@@ -580,7 +585,7 @@ PRICING = {
     h2="Kostenlos, wirklich",
     intro="Kein Abo, keine In-App-Käufe, kein Konto.",
     plans=[
-        ("PixCuller", "0 $", "Durchsuchen, vergleichen, sortieren und löschen, auf einem iPhone, einem Android-Telefon oder in einem Ordner, ohne Tageslimit. Mac und Windows."),
+        ("PixCuller", "0 $", "Durchsuchen, vergleichen, sortieren und löschen, auf einem iPhone, einem Android-Telefon oder in einem Ordner. Mac und Windows."),
     ],
     note="PixCuller funktioniert allein: Keine andere App muss gekauft oder installiert werden.",
 ),
@@ -588,7 +593,7 @@ PRICING = {
     h2="Gratis, de verdad",
     intro="Sin suscripción, sin compras integradas, sin cuenta.",
     plans=[
-        ("PixCuller", "0 $", "Explora, compara, ordena y elimina, en un iPhone, un teléfono Android o una carpeta, sin límite diario. Mac y Windows."),
+        ("PixCuller", "0 $", "Explora, compara, ordena y elimina, en un iPhone, un teléfono Android o una carpeta. Mac y Windows."),
     ],
     note="PixCuller funciona solo: ninguna otra app que comprar ni instalar.",
 ),
@@ -619,55 +624,50 @@ def render_pricing(lang):
 
 
 # Real screenshots of the PixCuller window (light and dark theme, sample photos), one set per language:
-# assets/screenshots/pixculler-{grid,review,compare,trips,android}-{lang}-{light,dark}.jpg
+# assets/screenshots/pixculler-{iphone,review,compare,android}-{lang}-{light,dark}.jpg
 SHOTS = {
 "en": dict(
     h2="A look at the app",
-    grid_alt="PixCuller showing a folder of photos, with badges on the similar ones",
+    grid_alt="PixCuller showing the photos of an iPhone connected by USB, with badges on the similar ones",
     items=[
         ("review", "Review a group of similar photos side by side: keep the best, mark the rest."),
         ("compare", "Compare up to 6 photos at once in full screen."),
-        ("trips", "Your library grouped by trip, with the space each one takes."),
         ("android", "Connect an Android phone with its USB cable: nothing to install on the phone."),
     ],
 ),
 "fr": dict(
     h2="Un aperçu de l'app",
-    grid_alt="PixCuller affichant un dossier de photos, avec des pastilles sur les photos similaires",
+    grid_alt="PixCuller affichant les photos d'un iPhone branché en USB, avec des pastilles sur les photos similaires",
     items=[
         ("review", "Passez en revue un groupe de photos similaires côte à côte : gardez la meilleure, marquez les autres."),
         ("compare", "Comparez jusqu'à 6 photos à la fois en plein écran."),
-        ("trips", "Votre photothèque regroupée par séjour, avec la place que chacun occupe."),
         ("android", "Branchez un téléphone Android avec son câble USB : rien à installer sur le téléphone."),
     ],
 ),
 "it": dict(
     h2="Uno sguardo all'app",
-    grid_alt="PixCuller con una cartella di foto e i badge sulle foto simili",
+    grid_alt="PixCuller con le foto di un iPhone collegato via USB e i badge sulle foto simili",
     items=[
         ("review", "Rivedi un gruppo di foto simili affiancate: tieni la migliore, segna le altre."),
         ("compare", "Confronta fino a 6 foto alla volta a schermo intero."),
-        ("trips", "La tua libreria raggruppata per soggiorno, con lo spazio occupato da ciascuno."),
         ("android", "Collega un telefono Android con il suo cavo USB: niente da installare sul telefono."),
     ],
 ),
 "de": dict(
     h2="Ein Blick in die App",
-    grid_alt="PixCuller zeigt einen Fotoordner mit Markierungen an ähnlichen Fotos",
+    grid_alt="PixCuller zeigt die Fotos eines per USB verbundenen iPhones mit Markierungen an ähnlichen Fotos",
     items=[
         ("review", "Eine Gruppe ähnlicher Fotos nebeneinander prüfen: das beste behalten, den Rest markieren."),
         ("compare", "Bis zu 6 Fotos gleichzeitig im Vollbild vergleichen."),
-        ("trips", "Deine Mediathek nach Aufenthalten gruppiert, mit dem Platz, den jeder belegt."),
         ("android", "Ein Android-Telefon mit seinem USB-Kabel anschließen: auf dem Telefon muss nichts installiert werden."),
     ],
 ),
 "es": dict(
     h2="Un vistazo a la app",
-    grid_alt="PixCuller mostrando una carpeta de fotos, con insignias en las fotos similares",
+    grid_alt="PixCuller mostrando las fotos de un iPhone conectado por USB, con insignias en las fotos similares",
     items=[
         ("review", "Revisa un grupo de fotos similares una al lado de otra: conserva la mejor, marca el resto."),
         ("compare", "Compara hasta 6 fotos a la vez a pantalla completa."),
-        ("trips", "Tu fototeca agrupada por estancia, con el espacio que ocupa cada una."),
         ("android", "Conecta un teléfono Android con su cable USB: no hay que instalar nada en el teléfono."),
     ],
 ),
@@ -703,20 +703,14 @@ def render_desktop_shots(lang):
 def render_pixculler_home(lang):
     d = DESKTOP[lang]
     a = lambda rel: asset_path(lang, rel)
-    features_html = "\n".join(
-        f'''        <div class="feature-card">
-          <span class="icon">{icon}</span>
-          <h3>{title}</h3>
-          <p>{text}</p>
-        </div>''' for icon, title, text in d["features"]
-    )
-    connect_html = "\n".join(
-        f'''        <div class="feature-card">
-          <span class="icon">{icon}</span>
-          <h3>{title}</h3>
-          <p>{text}</p>
-        </div>''' for icon, title, text in d["connect"]
-    )
+    card = lambda t: f'''        <div class="feature-card">
+          <span class="icon">{t[0]}</span>
+          <h3>{t[1]}</h3>
+          <p>{t[2]}</p>
+        </div>'''
+    steps_html = "\n".join(card(t) for t in d["steps"])
+    features_html = "\n".join(card(t) for t in d["features"])
+    strip_html = "\n".join(f"        <p>{p}</p>" for p in d["strip_items"])
     return f'''<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -748,31 +742,38 @@ def render_pixculler_home(lang):
     </header>
 
     <section class="hero">
-      <span class="badge">{d['badge']}</span>
       <h1>{d['h1']}</h1>
       <p class="subtitle">
         {d['subtitle']}
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="{PIXCULLER_DOWNLOAD_URL}" rel="noopener">{d['cta_download']}</a>
-        <a class="btn btn-primary" href="{PIXCULLER_WINDOWS_DOWNLOAD_URL}" rel="noopener">{d['cta_download_windows']}</a>
-        <a class="btn btn-primary" href="{MS_STORE_URL}" target="_blank" rel="noopener">{d['cta_ms_store']}</a>
+        <details class="dl-menu">
+          <summary class="btn btn-primary">{d['cta_download_windows']} <span aria-hidden="true">▾</span></summary>
+          <div class="dl-options">
+            <a href="{MS_STORE_URL}" target="_blank" rel="noopener">{d['dl_store']}</a>
+            <a href="{PIXCULLER_WINDOWS_DOWNLOAD_URL}" rel="noopener">{d['dl_zip']}</a>
+          </div>
+        </details>
       </div>
+      <p class="trust">{d['trust']}</p>
 
-      <a class="window-frame" href="{a(f'assets/screenshots/pixculler-grid-{lang}-light.jpg')}" target="_blank" rel="noopener">
-        {render_shot(lang, 'grid', SHOTS[lang]['grid_alt'], lazy=False)}
-      </a>
+      <div class="hero-shot">
+        <a class="window-frame" href="{a(f'assets/screenshots/pixculler-iphone-{lang}-light.jpg')}" target="_blank" rel="noopener">
+          {render_shot(lang, 'iphone', SHOTS[lang]['grid_alt'], lazy=False)}
+        </a>
+        <img class="iphone-frame" src="{a('assets/screenshots/iphone-frame.webp')}" width="520" height="1098" alt="" />
+      </div>
     </section>
 
-{render_desktop_shots(lang)}    <section id="connexion">
-      <h2>{d['connect_h2']}</h2>
-      <p style="text-align:center;">{d['connect_intro']}</p>
-      <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
-{connect_html}
+    <section id="connexion">
+      <h2>{d['steps_h2']}</h2>
+      <div class="features">
+{steps_html}
       </div>
     </section>
 
-    <section id="fonctionnalites">
+{render_desktop_shots(lang)}    <section id="fonctionnalites">
       <h2>{d['features_h2']}</h2>
       <div class="features">
 {features_html}
@@ -782,9 +783,10 @@ def render_pixculler_home(lang):
 {render_pricing(lang)}    <section>
       <div class="privacy-strip">
         <h2>{d['strip_h2']}</h2>
-        <p>{d['strip_p1']}</p>
-        <p>{d['strip_p2']}</p>
+{strip_html}
+        <p><a href="{path_for(lang, 'faq.html', lang)}">{d['strip_link']}</a></p>
       </div>
+      <p style="text-align:center;">{d['also']}</p>
     </section>
 
 {guides_section(lang)}
@@ -801,6 +803,7 @@ def render_pixculler_home(lang):
       </div>
     </footer>
   </div>
+  <script>document.addEventListener('click',e=>{{document.querySelectorAll('.dl-menu[open]').forEach(d=>{{if(!d.contains(e.target))d.open=false}})}})</script>
 </body>
 </html>
 '''
@@ -815,7 +818,7 @@ BLOG_UI = {l: CONTENT[l].BLOG_UI for l in LANGS}
 FAQS = {
     "pixculler": {l: CONTENT[l].FAQ_PIXCULLER for l in LANGS},
 }
-HERO_IMAGE = {"pixculler": "assets/screenshots/pixculler-grid-{lang}-light.jpg"}
+HERO_IMAGE = {"pixculler": "assets/screenshots/pixculler-iphone-{lang}-light.jpg"}
 APPLE_META = {"pixculler": ""}
 
 def link_tokens(text, lang, campaign):
@@ -1129,7 +1132,7 @@ def llms_pages():
                   f"- [{SITES[SITE]['brand']} blog]({page_url('en', 'blog.html')}): guides."] + posts
 
 def llms_txt(pages):
-    pricing = "- PixCuller is free: no subscription, no in-app purchase, no account, no daily limit.\n" if SHOW_PRICING else ""
+    pricing = "- PixCuller is free: no subscription, no in-app purchase, no account.\n" if SHOW_PRICING else ""
     deletion = ("- PixCuller 1.5 deletes the photos of an iPhone or an Android phone directly over the USB cable, on Windows 10/11 and on a Mac with macOS 27 or later. "
                 "The deletion is immediate and permanent on the phone (not sent to Recently Deleted or the phone's trash); by default PixCuller keeps a copy of each deleted item on the computer for 30 days "
                 "in a PixCuller Trash folder in Pictures. An iPhone's photos can only be deleted with iCloud Photos off. On macOS 26 or earlier, PixCuller shows and sorts an iPhone's photos but cannot delete them, "

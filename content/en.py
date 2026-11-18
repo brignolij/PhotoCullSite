@@ -33,7 +33,7 @@ FAQ_PIXCULLER = dict(
         ("How do I free up my iPhone storage from a Mac or PC?",
          "Plug in your iPhone by USB, open PixCuller, mark the trips and photos you no longer need, and confirm. PixCuller deletes them directly over the USB cable, on Windows 10/11 or on a Mac with macOS 27 or later, as long as iCloud Photos is off. The deletion is immediate and permanent on the iPhone, with a copy kept on your computer for 30 days by default. On macOS 26 or earlier, PixCuller still shows and sorts the iPhone's photos, but you delete them in the iPhone's Photos app."),
         ("Can I delete photos from my iPhone directly from my computer?",
-         "Yes. With an iPhone, PixCuller deletes the photos directly over the USB cable, from a Mac or a Windows PC, with no daily limit and nothing to buy. Three conditions: iCloud Photos is turned off on the iPhone (when it is on, Apple does not allow this deletion), a Mac runs macOS 27 or later (any Windows 10/11 PC works), and you accept that the deletion is immediate and permanent on the iPhone: the photos do not go to “Recently Deleted”. By default, PixCuller keeps a copy of each deleted item on your computer for 30 days, in a “PixCuller Trash” folder in Pictures (a checkbox when you confirm), so a mistake can be undone by importing the file again. Live Photos and edited photos are handled correctly (all their versions are deleted together), and PixCuller shows the edited version of an edited photo. If iCloud Photos is on, turn it off (Settings > [your name] > iCloud > Photos) or delete in the iPhone's Photos app. On macOS 26 or earlier, PixCuller can show and sort the iPhone's photos but not delete them: a banner in the app says so, and you delete in the iPhone's Photos app."),
+         "Yes. With an iPhone, PixCuller deletes the photos directly over the USB cable, from a Mac or a Windows PC, with nothing to buy. Three conditions: iCloud Photos is turned off on the iPhone (when it is on, Apple does not allow this deletion), a Mac runs macOS 27 or later (any Windows 10/11 PC works), and you accept that the deletion is immediate and permanent on the iPhone: the photos do not go to “Recently Deleted”. By default, PixCuller keeps a copy of each deleted item on your computer for 30 days, in a “PixCuller Trash” folder in Pictures (a checkbox when you confirm), so a mistake can be undone by importing the file again. Live Photos and edited photos are handled correctly (all their versions are deleted together), and PixCuller shows the edited version of an edited photo. If iCloud Photos is on, turn it off (Settings > [your name] > iCloud > Photos) or delete in the iPhone's Photos app. On macOS 26 or earlier, PixCuller can show and sort the iPhone's photos but not delete them: a banner in the app says so, and you delete in the iPhone's Photos app."),
         ("Is deleting from PixCuller permanent?",
          "On a phone, yes. With an iPhone or an Android phone, the deletion over the USB cable is immediate and permanent on the phone: the photos do not go to “Recently Deleted” or to the phone's trash. By default, PixCuller keeps a copy of each deleted item on your computer for 30 days, in a “PixCuller Trash” folder in Pictures (a checkbox when you confirm), so you can import it again. In a folder on your computer, files go to the Trash or Recycle Bin."),
         ("How do I connect my iPhone to PixCuller?",
@@ -51,7 +51,7 @@ FAQ_PIXCULLER = dict(
         ("How do I find duplicate photos in a folder on my Mac or PC?",
          "Open the folder in PixCuller (Open folder, or drop it onto the window). It looks through the subfolders, compares what the photos show and puts the same “≈ N” badge on exact copies, bursts and near-identical shots. Keep the best of each group and send the rest to the Trash or Recycle Bin. Guides: <a href=\"{post:find-duplicate-photos-on-mac}\">on a Mac</a>, <a href=\"{post:find-duplicate-photos-on-windows}\">on Windows</a>."),
         ("Can I use PixCuller on photos stored on my computer, not on an iPhone?",
-         "Yes. Open any folder: PixCuller finds similar photos in it, shows the badges on the similar ones and lets you compare and delete with no daily limit."),
+         "Yes. Open any folder: PixCuller finds similar photos in it, shows the badges on the similar ones and lets you compare and delete."),
         ("How does PixCuller find similar photos?",
          "It compares the content of your photos, not their file names, so bursts, near-identical shots and the same scene taken several times end up in the same group. You can compare up to 6 photos side by side and keep the sharpest, best-framed one."),
         ("How do I compare similar photos side by side?",
@@ -61,7 +61,7 @@ FAQ_PIXCULLER = dict(
         ("Which Macs does PixCuller support?",
          "Macs with Apple Silicon running macOS 11 or later. The app is signed and notarized by Apple, so it opens without a security warning."),
         ("Is PixCuller free? Is there a subscription?",
-         "Yes, PixCuller is free, with no subscription and no in-app purchase. Browsing, comparing, sorting and deleting are free, with no daily limit, on a phone as in a folder on your computer."),
+         "Yes, PixCuller is free, with no subscription and no in-app purchase. Browsing, comparing, sorting and deleting are free, on a phone as in a folder on your computer."),
         ("Does PixCuller send my photos to a server or the cloud?",
          "No. PixCuller works 100% on-device: no account, no cloud, no photo, video or location is ever sent anywhere. Place recognition and similar-photo detection run on your computer. Only optional, anonymous usage statistics can be sent."),
         ("Will PixCuller change or modify my original photos?",
@@ -104,7 +104,7 @@ dict(slug="sort-iphone-photos-on-mac",
         <li>Everything stays on your Mac and your iPhone: no account, no cloud, no upload.</li>
         <li>PixCuller never modifies your originals and only deletes what you confirm.</li>
         <li>On macOS 26 or earlier, PixCuller shows and sorts the iPhone's photos but cannot delete them: a banner in the app says so, and you delete in the iPhone's Photos app.</li>
-        <li>PixCuller is free, with no daily limit, and sorting a folder of photos on the Mac works the same way.</li>
+        <li>PixCuller is free, and sorting a folder of photos on the Mac works the same way.</li>
       </ul>"""),
 dict(slug="sort-iphone-photos-on-pc",
      title="How to sort your iPhone photos on a Windows PC",
@@ -123,7 +123,7 @@ dict(slug="sort-iphone-photos-on-pc",
       <p><strong>2. Install PixCuller.</strong> Get it from the Microsoft Store or <a href="{win}">download it for free</a> (Windows 10/11, 64-bit). The download is not code-signed yet, so SmartScreen may warn on first launch.</p>
       <p><strong>3. Plug in the iPhone.</strong> Connect it with a USB cable, unlock it and tap Trust.</p>
       <p><strong>4. Sort trip by trip.</strong> The Trips view groups your camera roll by date and place and shows the space each trip takes. Start with the heaviest.</p>
-      <p><strong>5. Compare, mark, delete.</strong> Similar photos carry a badge: compare up to six side by side, keep the best and mark the rest. With iCloud Photos off, PixCuller deletes them directly over the USB cable, with no daily limit. The deletion is permanent on the iPhone (no “Recently Deleted”), but by default PixCuller keeps a copy of each deleted item on your PC for 30 days, in a “PixCuller Trash” folder in Pictures. If iCloud Photos is on, turn it off (Settings > [your name] > iCloud > Photos) or delete in the iPhone's Photos app.</p>
+      <p><strong>5. Compare, mark, delete.</strong> Similar photos carry a badge: compare up to six side by side, keep the best and mark the rest. With iCloud Photos off, PixCuller deletes them directly over the USB cable. The deletion is permanent on the iPhone (no “Recently Deleted”), but by default PixCuller keeps a copy of each deleted item on your PC for 30 days, in a “PixCuller Trash” folder in Pictures. If iCloud Photos is on, turn it off (Settings > [your name] > iCloud > Photos) or delete in the iPhone's Photos app.</p>
 
       <h2>Good to know</h2>
       <ul>
@@ -184,8 +184,6 @@ dict(slug="free-up-iphone-from-mac-or-pc",
       <h2>Is it safe?</h2>
       <p>Yes: your photos stay on your devices, with no account, no cloud and no upload. PixCuller only reads your photos until you confirm. A deletion is permanent on the iPhone, but a copy stays on your computer for 30 days by default.</p>
 
-      <h2>How many photos can I delete per day?</h2>
-      <p>As many as you want: there is no daily limit and nothing to buy. PixCuller is free, with no subscription.</p>
 
       <h2>On Windows</h2>
       <p>The steps are the same on Windows 10 and 11. Install the free Apple Devices app from the Microsoft Store first, so PixCuller can read the iPhone. The app is not code-signed yet, so SmartScreen may warn on first launch.</p>"""),
@@ -316,7 +314,7 @@ dict(slug="sort-android-photos-on-mac",
       <ul>
         <li>Everything stays on your Mac and your phone: no account, no cloud, no upload.</li>
         <li>PixCuller never modifies your originals and only deletes what you confirm.</li>
-        <li>PixCuller is free, with no daily limit.</li>
+        <li>PixCuller is free, with no subscription.</li>
         <li>Got an iPhone too? It connects to the Mac with a USB cable as well.</li>
       </ul>"""),
 dict(slug="sort-android-photos-on-pc",
@@ -343,7 +341,7 @@ dict(slug="sort-android-photos-on-pc",
       <ul>
         <li>Everything stays on your PC and your phone: no account, no cloud, no upload.</li>
         <li>Deleting from File Explorer is permanent with no copy kept; PixCuller keeps the 30-day copy on the PC by default.</li>
-        <li>PixCuller is free, with no daily limit, and sorting a folder on the PC works the same way.</li>
+        <li>PixCuller is free, and sorting a folder on the PC works the same way.</li>
       </ul>"""),
 dict(slug="free-up-android-from-mac-or-pc",
      title="How to free up Android storage from a Mac or Windows PC",
@@ -367,7 +365,7 @@ dict(slug="free-up-android-from-mac-or-pc",
       <h2>Good to know</h2>
       <ul>
         <li>No account and no upload: the phone and the computer talk over the USB cable.</li>
-        <li>PixCuller is free, with no daily limit.</li>
+        <li>PixCuller is free, with no subscription.</li>
       </ul>"""),
 ],
 }
